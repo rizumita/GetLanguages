@@ -66,6 +66,7 @@
 		6AC48AD61C8B96B9002E2890 /* Swiftz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swiftz.framework; path = Carthage/Build/iOS/Swiftz.framework; sourceTree = "<group>"; };
 		6AC48AD71C8B96B9002E2890 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		6AC48AD81C8B96B9002E2890 /* TransitionOperator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TransitionOperator.framework; path = Carthage/Build/iOS/TransitionOperator.framework; sourceTree = "<group>"; };
+		6AC48ADF1C8B9AA4002E2890 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		7FD708EBACC7FBE44D48B67F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		88D91ACE3700DB9B499F6161 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FA38DAC5133A10222B6C1379 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +125,7 @@
 		6AC48A911C8B9419002E2890 = {
 			isa = PBXGroup;
 			children = (
+				6AC48ADF1C8B9AA4002E2890 /* Playground.playground */,
 				6AC48A9C1C8B9419002E2890 /* GetLanguages */,
 				6AC48AB11C8B9419002E2890 /* GetLanguagesTests */,
 				6AC48ABC1C8B9419002E2890 /* GetLanguagesUITests */,
