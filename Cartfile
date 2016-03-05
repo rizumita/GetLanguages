@@ -1,0 +1,4 @@
+github "ReactiveCocoa/ReactiveCocoa"
+github "typelift/Swiftz"
+github "Swinject/Swinject"
+github "rizumita/TransitionOperator"
