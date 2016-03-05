@@ -24,7 +24,12 @@
 		6AC48ADB1C8B96B9002E2890 /* Swiftz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC48AD61C8B96B9002E2890 /* Swiftz.framework */; };
 		6AC48ADC1C8B96B9002E2890 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC48AD71C8B96B9002E2890 /* Swinject.framework */; };
 		6AC48ADD1C8B96B9002E2890 /* TransitionOperator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC48AD81C8B96B9002E2890 /* TransitionOperator.framework */; };
+		6AC48AE11C8B9EAD002E2890 /* LanguageCatcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC48AE01C8B9EAD002E2890 /* LanguageCatcherViewController.swift */; };
 		70E3DFDB1A68E155CB5AC1C1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA38DAC5133A10222B6C1379 /* Pods.framework */; };
+		CB8760D3AD4D4398D9790BC9 /* LanguageCatcherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876624267F0EE1CD42FBE8 /* LanguageCatcherPresenter.swift */; };
+		CB87624270DEB3218C8796DE /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8765D70EDEEC00234F1D50 /* Assembler.swift */; };
+		CB8764055461FEB004EC2F25 /* LanguageCatcherAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876605F8D738DB49BFF555 /* LanguageCatcherAssembly.swift */; };
+		CB876FB2DD8CDD1C42A7D1FE /* LanguageCatcherPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8760A0CC6A699DC8C0A577 /* LanguageCatcherPresenterType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +72,13 @@
 		6AC48AD71C8B96B9002E2890 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		6AC48AD81C8B96B9002E2890 /* TransitionOperator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TransitionOperator.framework; path = Carthage/Build/iOS/TransitionOperator.framework; sourceTree = "<group>"; };
 		6AC48ADF1C8B9AA4002E2890 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
+		6AC48AE01C8B9EAD002E2890 /* LanguageCatcherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherViewController.swift; sourceTree = "<group>"; };
 		7FD708EBACC7FBE44D48B67F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		88D91ACE3700DB9B499F6161 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CB8760A0CC6A699DC8C0A577 /* LanguageCatcherPresenterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherPresenterType.swift; sourceTree = "<group>"; };
+		CB8765D70EDEEC00234F1D50 /* Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		CB876605F8D738DB49BFF555 /* LanguageCatcherAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherAssembly.swift; sourceTree = "<group>"; };
+		CB876624267F0EE1CD42FBE8 /* LanguageCatcherPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherPresenter.swift; sourceTree = "<group>"; };
 		FA38DAC5133A10222B6C1379 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,6 +165,8 @@
 				6AC48AA41C8B9419002E2890 /* Assets.xcassets */,
 				6AC48AA61C8B9419002E2890 /* LaunchScreen.storyboard */,
 				6AC48AA91C8B9419002E2890 /* Info.plist */,
+				CB8760AD41C2D665E079BAF7 /* Modules */,
+				CB87629726E5C5B7BABD2AF9 /* Assemblies */,
 			);
 			path = GetLanguages;
 			sourceTree = "<group>";
@@ -175,6 +187,49 @@
 				6AC48ABF1C8B9419002E2890 /* Info.plist */,
 			);
 			path = GetLanguagesUITests;
+			sourceTree = "<group>";
+		};
+		CB87608D3709F7BA1DD9F660 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6AC48AE01C8B9EAD002E2890 /* LanguageCatcherViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB8760AD41C2D665E079BAF7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CB876F131C38D21AFDC21699 /* LanguageCatcher */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CB87629726E5C5B7BABD2AF9 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				CB876605F8D738DB49BFF555 /* LanguageCatcherAssembly.swift */,
+				CB8765D70EDEEC00234F1D50 /* Assembler.swift */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		CB876F131C38D21AFDC21699 /* LanguageCatcher */ = {
+			isa = PBXGroup;
+			children = (
+				CB87608D3709F7BA1DD9F660 /* View */,
+				CB876F95B7F3A9CE894B6874 /* Presenter */,
+			);
+			path = LanguageCatcher;
+			sourceTree = "<group>";
+		};
+		CB876F95B7F3A9CE894B6874 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CB8760A0CC6A699DC8C0A577 /* LanguageCatcherPresenterType.swift */,
+				CB876624267F0EE1CD42FBE8 /* LanguageCatcherPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		F8AA202B90AC53AA0E29A787 /* Pods */ = {
@@ -406,6 +461,11 @@
 				6AC48AA01C8B9419002E2890 /* ViewController.swift in Sources */,
 				6AC48A9E1C8B9419002E2890 /* AppDelegate.swift in Sources */,
 				6AC48ACD1C8B9584002E2890 /* R.generated.swift in Sources */,
+				6AC48AE11C8B9EAD002E2890 /* LanguageCatcherViewController.swift in Sources */,
+				CB876FB2DD8CDD1C42A7D1FE /* LanguageCatcherPresenterType.swift in Sources */,
+				CB8760D3AD4D4398D9790BC9 /* LanguageCatcherPresenter.swift in Sources */,
+				CB8764055461FEB004EC2F25 /* LanguageCatcherAssembly.swift in Sources */,
+				CB87624270DEB3218C8796DE /* Assembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +611,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = GetLanguages/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.GetLanguages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -567,6 +628,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = GetLanguages/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.GetLanguages;
 				PRODUCT_NAME = "$(TARGET_NAME)";

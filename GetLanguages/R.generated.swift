@@ -60,7 +60,7 @@ struct _R {
     }
     
     struct main: StoryboardResourceWithInitialControllerType {
-      typealias InitialController = ViewController
+      typealias InitialController = LanguageCatcherViewController
       
       let bundle = _R.hostingBundle
       let name = "Main"
