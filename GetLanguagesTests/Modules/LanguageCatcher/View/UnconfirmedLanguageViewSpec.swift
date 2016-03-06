@@ -17,8 +17,8 @@ class UnconfirmedLanguageViewSpec: QuickSpec {
                                                           actionDuration: 4.0)
             let view       = UnconfirmedLanguageView(viewModel: viewModel)
 
-            it("is chaneged properties") {
-                expect(view.backgroundColor) == UIColor.redColor()
+            it("has properties") {
+                expect(CGColorEqualToColor((view.layer as! CAShapeLayer).fillColor, UIColor.redColor().CGColor)) == true
                 expect(view.frame.width) == 50.0
                 expect(view.frame.height) == 50.0
             }

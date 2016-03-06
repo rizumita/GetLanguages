@@ -11,6 +11,7 @@ protocol UnconfirmedLanguageViewModelType {
     var size:           CGFloat { get }
     var actionDuration: NSTimeInterval { get }
     var color:          UIColor { get }
+    var shape:          UIBezierPath { get }
 
     var caughtSignal:   Signal<(), NoError> { get }
     var caughtObsevrer: Observer<(), NoError> { get }
