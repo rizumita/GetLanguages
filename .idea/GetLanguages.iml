@@ -2,19 +2,36 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/UnconfirmedLanguageViewModel.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/RandomPositionMaker.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/PositionMakerType.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/RandomColorMaker.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/LanguageCatcherPresenter.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/ColorMakerType.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/UnconfirmedLanguageViewModelType.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/LanguageCatcherPresenterType.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/View/UnconfirmedLanguageView.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/View/LanguageCatcherViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/View/FieldView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/Commons/Model/LanguageType.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/Commons/Model/NaturalLanguage.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/Commons/Model/ProgrammingLanguage.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Assemblies/LanguageCatcherAssembly.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Assemblies/Assembler.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/R.generated.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/AppDelegate.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Extensions/ReactiveCocoa+Extensions.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/ViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/GetLanguages.pcvd" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Base.lproj/Main.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/GetLanguagesTests.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/UnconfirmedLanguageViewModelSpec.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/LanguageCatcherPresenterSpec.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/StaticColorMaker.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/StaticPositionMaker.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/View/UnconfirmedLanguageViewSpec.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Playground.playground" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesUITests/GetLanguagesUITests.swift" isTestSource="false" />
@@ -28,12 +45,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/R.swift.Library/R.swift.Library.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-acknowledgements.markdown" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.modulemap" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-frameworks.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-resources.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.release.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-umbrella.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-frameworks.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.debug.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-acknowledgements.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/Core/StoryboardResource.swift" isTestSource="false" />

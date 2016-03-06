@@ -4,11 +4,24 @@
 //
 
 import Foundation
+import ReactiveCocoa
 
 class LanguageCatcherPresenter: LanguageCatcherPresenterType {
 
+    let languageViewModelProperty: AnyProperty<UnconfirmedLanguageViewModel?>
+    private let _languageViewModelProperty = MutableProperty<UnconfirmedLanguageViewModel?>(nil)
+
+    init() {
+        languageViewModelProperty = AnyProperty(initialValue: nil, producer: _languageViewModelProperty.producer)
+    }
+
     func bringLanguages() {
-        print("bring")
+        let language = ProgrammingLanguage(id: NSUUID().UUIDString,
+                                           name: "Test language",
+                                           description: "Test description")
+        _languageViewModelProperty.value = UnconfirmedLanguageViewModel(language: language,
+                                                                        positionMaker: RandomPositionMaker(),
+                                                                        colorMaker: RandomColorMaker())
     }
 
 }

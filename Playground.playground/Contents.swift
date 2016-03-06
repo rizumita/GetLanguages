@@ -16,11 +16,15 @@ class UnconfirmedLanguageView: UIView {
         nextAction?()
     }
     
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+        print(change)
+    }
+    
     func runActionInArea(area: CGSize) -> () -> () {
         return { [unowned self] in
             let anim = CABasicAnimation(keyPath: "position")
             anim.fromValue = self.layer.valueForKey("position")
-            
+    
             let x = arc4random_uniform(UInt32(area.width))
             let y = arc4random_uniform(UInt32(area.height))
             let destination = CGPoint(x: CGFloat(x), y: CGFloat(y))

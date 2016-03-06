@@ -15,11 +15,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLw-XM-V2I" customClass="FieldView" customModule="GetLanguages" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wLw-XM-V2I" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6bV-Mo-fl8"/>
+                            <constraint firstItem="wLw-XM-V2I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H0n-L3-h8M"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wLw-XM-V2I" secondAttribute="bottom" id="ZCt-PN-QXS"/>
+                            <constraint firstAttribute="trailing" secondItem="wLw-XM-V2I" secondAttribute="trailing" id="j4h-U2-gTs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fieldView" destination="wLw-XM-V2I" id="Ypc-vf-hXa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="780" y="645"/>
         </scene>
     </scenes>
 </document>

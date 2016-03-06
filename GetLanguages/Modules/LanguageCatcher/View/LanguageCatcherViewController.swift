@@ -7,22 +7,42 @@
 //
 
 import UIKit
+import ReactiveCocoa
 
 class LanguageCatcherViewController: UIViewController {
+
+    let maxLanguageNumber = 5
+    
+    @IBOutlet weak var fieldView: FieldView!
     
     var presenter: LanguageCatcherPresenterType!
+
+    let disposable = CompositeDisposable()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        presenter.bringLanguages()
+        disposable += presenter.languageViewModelProperty.producer.ignoreNil().observeOn(UIScheduler()).startWithNext(bringLanguageView)
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+        for _ in 0..<(maxLanguageNumber - fieldView.subviews.count) {
+            presenter.bringLanguages()
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    func bringLanguageView(viewModel: UnconfirmedLanguageViewModel) {
+        let languageView = UnconfirmedLanguageView(viewModel: viewModel)
+        languageView.emergeOnField(fieldView)
+        languageView.move()
+    }
 
     /*
     // MARK: - Navigation
