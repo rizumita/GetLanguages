@@ -8,7 +8,11 @@ import UIKit
 
 class StaticPositionMaker: PositionMakerType {
     func positionOnArea(area: CGSize) -> CGPoint {
-        return positions.removeFirst() ?? CGPointZero
+        if positions.count > 0 {
+            return positions.removeFirst()
+        } else {
+            return CGPointZero
+        }
     }
 
     private var positions: [CGPoint]

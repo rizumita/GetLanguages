@@ -4,6 +4,7 @@ use_frameworks!
 pod 'R.swift'
 
 target :GetLanguagesTests, :exclusive => true do
+  pod 'R.swift'
   pod 'OHHTTPStubs'
   pod 'OHHTTPStubs/Swift'
 end

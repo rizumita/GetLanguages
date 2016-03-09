@@ -33,18 +33,20 @@ class LanguageCatcherInteractor: LanguageCatcherInteractorType {
         self.APIDataManager = APIDataManager
         self.translator = translator
 
-        let existsLanguage = localDataManager.existsLanguages
-        if !existsLanguage {
-            self.APIDataManager.fetchData()
-        }
-
         (fetchedLanguageSignal, fetchedLanguageObserver) = Signal.pipe()
         (errorMessageSignal, errorMessageObserver) = Signal.pipe()
 
-        disposable += self.APIDataManager.errorProperty.producer.map {
-            _ in "Unable to fetch data"
-        }.start(errorMessageObserver)
-        preparedProperty = AnyProperty(initialValue: existsLanguage, producer: self.APIDataManager.fetchedProperty.producer)
+        let existsLanguage = localDataManager.existsLanguages
+        if existsLanguage  {
+            preparedProperty = AnyProperty(initialValue: existsLanguage, producer: SignalProducer(value: true))
+        } else {
+            preparedProperty = AnyProperty(initialValue: existsLanguage, producer: self.APIDataManager.fetchedProperty.producer)
+            disposable += self.APIDataManager.errorProperty.producer.map {
+                _ in "Unable to fetch data"
+            }.start(errorMessageObserver)
+
+            self.APIDataManager.fetchData()
+        }
     }
 
     func fetchLanguage() {

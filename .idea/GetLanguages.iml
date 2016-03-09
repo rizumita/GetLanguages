@@ -8,13 +8,16 @@
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/DataManager/category_failed.json" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/DataManager/TestingLanguageCatcherLocalDataManager.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/DataManager/LanguageCatcherLocalDataManagerSpec.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/UnconfirmedLanguageViewModelSpec.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/TestingLanguageCatcherPresenter.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/StaticPositionMaker.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/StaticColorMaker.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/UnconfirmedLanguageViewModelTranslatorSpec.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/StaticPositionMaker.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/BasketSpec.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/UnconfirmedLanguageViewModelSpec.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/LanguageCatcherPresenterSpec.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/RandomColorMakerSpec.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Presenter/RandomPositionMakerSpec.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/View/LanguageCatcherViewControllerSpec.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/View/UnconfirmedLanguageViewSpec.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Interactor/LanguageInfoTranslatorSpec.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguagesTests/Modules/LanguageCatcher/Interactor/UnconfirmedLanguageSpec.swift" isTestSource="false" />
@@ -33,6 +36,7 @@
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/RandomPositionMaker.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/PositionMakerType.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/ColorMakerType.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/Basket.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/LanguageCatcherPresenter.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/UnconfirmedLanguageViewModelTranslator.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GetLanguages/Modules/LanguageCatcher/Presenter/UnconfirmedLanguageViewModelType.swift" isTestSource="false" />
@@ -65,15 +69,15 @@
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHHTTPStubsResponse.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHHTTPStubs.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/NSURLSession/OHHTTPStubs+NSURLSessionConfiguration.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHHTTPStubsResponse.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/Compatibility.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/NSURLSession/OHHTTPStubs+NSURLSessionConfiguration.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/Swift/OHHTTPStubsSwift.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHHTTPStubsResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHHTTPStubs.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHHTTPStubs.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/Swift/OHHTTPStubsSwift.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/OHHTTPStubs/OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/Core/StoryboardResource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/Core/ImageResource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/Core/ReuseIdentifierProtocol.swift" isTestSource="false" />
@@ -85,16 +89,16 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/Core/StoryboardSegueIdentifierProtocol.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/Foundation/NSBundle+FileResource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/UIImage+ImageResource.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/UITableView+ReuseIdentifierProtocol.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/UIFont+FontResource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/UIStoryboard+StoryboardResource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/UIViewController+NibResource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/NibResource+UIKit.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/UINib+NibResource.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/R.swift.Library/Library/UIKit/UIViewController+NibResource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-GetLanguagesUITests/Pods-GetLanguagesUITests-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-GetLanguagesUITests/Pods-GetLanguagesUITests.modulemap" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-GetLanguagesUITests/Pods-GetLanguagesUITests-resources.sh" isTestSource="false" />
@@ -105,18 +109,18 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-GetLanguagesUITests/Pods-GetLanguagesUITests-acknowledgements.markdown" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-GetLanguagesUITests/Pods-GetLanguagesUITests-umbrella.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-GetLanguagesUITests/Pods-GetLanguagesUITests.debug.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OHHTTPStubs/OHHTTPStubs.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OHHTTPStubs/OHHTTPStubs-umbrella.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OHHTTPStubs/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OHHTTPStubs/OHHTTPStubs-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/R.swift.Library/R.swift.Library-umbrella.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/R.swift.Library/R.swift.Library.modulemap" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/R.swift.Library/R.swift.Library-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/R.swift.Library/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/R.swift.Library/R.swift.Library-prefix.pch" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/R.swift.Library/R.swift.Library.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OHHTTPStubs/OHHTTPStubs.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OHHTTPStubs/OHHTTPStubs-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OHHTTPStubs/OHHTTPStubs-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OHHTTPStubs/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-GetLanguagesTests/Pods-GetLanguagesTests-umbrella.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-GetLanguagesTests/Pods-GetLanguagesTests.modulemap" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-GetLanguagesTests/Pods-GetLanguagesTests.release.xcconfig" isTestSource="false" />
@@ -129,12 +133,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-GetLanguagesTests/Pods-GetLanguagesTests-resources.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-acknowledgements.markdown" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.modulemap" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-frameworks.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.debug.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.release.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-umbrella.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-frameworks.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-resources.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-acknowledgements.plist" isTestSource="false" />
     </content>

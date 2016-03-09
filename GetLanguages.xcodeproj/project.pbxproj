@@ -42,6 +42,7 @@
 		CB8760D3AD4D4398D9790BC9 /* LanguageCatcherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876624267F0EE1CD42FBE8 /* LanguageCatcherPresenter.swift */; };
 		CB8760DB0A487F8EA8CC4BB8 /* properties.json in Resources */ = {isa = PBXBuildFile; fileRef = CB8768929774F9EF0086E0C0 /* properties.json */; };
 		CB876102B12F0B8BCAD89B48 /* UnconfirmedLanguageViewModelTranslatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876A7B7922C9B542255BCB /* UnconfirmedLanguageViewModelTranslatorSpec.swift */; };
+		CB8761BCB56AE6F8A003A3F8 /* BasketSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876267E597357ECAED55E4 /* BasketSpec.swift */; };
 		CB8761E51C63FF06C1CBDC39 /* StaticColorMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8761346FDEE041788E4DF6 /* StaticColorMaker.swift */; };
 		CB87624270DEB3218C8796DE /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8765D70EDEEC00234F1D50 /* Assembler.swift */; };
 		CB8762D2AEE244F407DD8660 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87638C77D51F35CF39AE12 /* LanguageType.swift */; };
@@ -70,7 +71,9 @@
 		CB876978EB0BE6D3AAAADAAC /* LanguageCatcherPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8764900B577BA40855B3B9 /* LanguageCatcherPresenterSpec.swift */; };
 		CB876A50C029A70E4D7229CA /* LanguageCatcherAPIDataManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8762B8410C3BD56E148B62 /* LanguageCatcherAPIDataManagerSpec.swift */; };
 		CB876B0289AF03EE2038881B /* LanguageCatcherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8762066CCECCD64B2D5DDC /* LanguageCatcherInteractor.swift */; };
+		CB876B16E483DACCC013F684 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876CA83041C8FC323C0CB7 /* Basket.swift */; };
 		CB876B30160AF2CC5BFAFAB0 /* LanguageCatcherInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876ACFA2CAC4CC48B0F65F /* LanguageCatcherInteractorType.swift */; };
+		CB876CEAB1B9E16FDDBF5FC7 /* LanguageCatcherViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87694695CD64DD88D52B0C /* LanguageCatcherViewControllerSpec.swift */; };
 		CB876D0926013C22191B73EF /* LanguageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8761956AC6BA86047BE1C8 /* LanguageInfo.swift */; };
 		CB876D27C9651ECBE0BF50B2 /* TestingLanguageCatcherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876878F38D46C508908C6D /* TestingLanguageCatcherInteractor.swift */; };
 		CB876D51F7E7A9054D29ABD9 /* RandomColorMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8761C66B10CC08F13FDF3C /* RandomColorMaker.swift */; };
@@ -80,6 +83,7 @@
 		CB876F14B31A55CFE6AE7FA6 /* UnconfirmedLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8769A656C96B8E42D4AA91 /* UnconfirmedLanguageView.swift */; };
 		CB876F4551C3195FEB8FAE81 /* RandomPositionMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87639E1189084FDC321BB4 /* RandomPositionMaker.swift */; };
 		CB876F5A0BB980A95F165A05 /* TestingLanguageCatcherLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876DFBC34DA8F31EB9D16C /* TestingLanguageCatcherLocalDataManager.swift */; };
+		CB876F815F6A0952A6CC5546 /* TestingLanguageCatcherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8762D21132EDC0B168B230 /* TestingLanguageCatcherPresenter.swift */; };
 		CB876FA509F21A13A1C81284 /* LanguageCatcherAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876076EB99CD2A628D3963 /* LanguageCatcherAPIDataManager.swift */; };
 		CB876FB2DD8CDD1C42A7D1FE /* LanguageCatcherPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8760A0CC6A699DC8C0A577 /* LanguageCatcherPresenterType.swift */; };
 		CB876FDB37597607C2E23861 /* LanguageCatcherAPIDataManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8766D2DDE5622D8ED70003 /* LanguageCatcherAPIDataManagerType.swift */; };
@@ -162,7 +166,9 @@
 		CB8761956AC6BA86047BE1C8 /* LanguageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageInfo.swift; sourceTree = "<group>"; };
 		CB8761C66B10CC08F13FDF3C /* RandomColorMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorMaker.swift; sourceTree = "<group>"; };
 		CB8762066CCECCD64B2D5DDC /* LanguageCatcherInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherInteractor.swift; sourceTree = "<group>"; };
+		CB876267E597357ECAED55E4 /* BasketSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketSpec.swift; sourceTree = "<group>"; };
 		CB8762B8410C3BD56E148B62 /* LanguageCatcherAPIDataManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherAPIDataManagerSpec.swift; sourceTree = "<group>"; };
+		CB8762D21132EDC0B168B230 /* TestingLanguageCatcherPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingLanguageCatcherPresenter.swift; sourceTree = "<group>"; };
 		CB87637EBD1D278B783C7E10 /* category_failed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category_failed.json; sourceTree = "<group>"; };
 		CB87638C77D51F35CF39AE12 /* LanguageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
 		CB87639E1189084FDC321BB4 /* RandomPositionMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomPositionMaker.swift; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 		CB8767DA094AF7C837A91398 /* RandomPositionMakerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomPositionMakerSpec.swift; sourceTree = "<group>"; };
 		CB876878F38D46C508908C6D /* TestingLanguageCatcherInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingLanguageCatcherInteractor.swift; sourceTree = "<group>"; };
 		CB8768929774F9EF0086E0C0 /* properties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = properties.json; sourceTree = "<group>"; };
+		CB87694695CD64DD88D52B0C /* LanguageCatcherViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherViewControllerSpec.swift; sourceTree = "<group>"; };
 		CB8769A656C96B8E42D4AA91 /* UnconfirmedLanguageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageView.swift; sourceTree = "<group>"; };
 		CB876A7B7922C9B542255BCB /* UnconfirmedLanguageViewModelTranslatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageViewModelTranslatorSpec.swift; sourceTree = "<group>"; };
 		CB876AB15408581659E7188A /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
@@ -191,6 +198,7 @@
 		CB876B3C6E1766C0824D30ED /* ColorMakerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorMakerType.swift; sourceTree = "<group>"; };
 		CB876BB545493AF489D1E126 /* StaticPositionMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticPositionMaker.swift; sourceTree = "<group>"; };
 		CB876C15D5AC33AD5B31FA02 /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		CB876CA83041C8FC323C0CB7 /* Basket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
 		CB876DD891B03CFF57EADEE8 /* LanguageInfoTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageInfoTranslator.swift; sourceTree = "<group>"; };
 		CB876DFBC34DA8F31EB9D16C /* TestingLanguageCatcherLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingLanguageCatcherLocalDataManager.swift; sourceTree = "<group>"; };
 		CB876E46A27ED877CCB976EC /* TestingLanguageCatcherAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingLanguageCatcherAPIDataManager.swift; sourceTree = "<group>"; };
@@ -434,6 +442,8 @@
 				CB8766C79A38ACBC67139D0C /* RandomColorMakerSpec.swift */,
 				CB8767DA094AF7C837A91398 /* RandomPositionMakerSpec.swift */,
 				CB876A7B7922C9B542255BCB /* UnconfirmedLanguageViewModelTranslatorSpec.swift */,
+				CB876267E597357ECAED55E4 /* BasketSpec.swift */,
+				CB8762D21132EDC0B168B230 /* TestingLanguageCatcherPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -484,6 +494,7 @@
 			isa = PBXGroup;
 			children = (
 				CB87646280F1D53BAC01D3FD /* UnconfirmedLanguageViewSpec.swift */,
+				CB87694695CD64DD88D52B0C /* LanguageCatcherViewControllerSpec.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -500,6 +511,7 @@
 				CB876B3C6E1766C0824D30ED /* ColorMakerType.swift */,
 				CB8761C66B10CC08F13FDF3C /* RandomColorMaker.swift */,
 				CB876598C5B9CF6D7B2E3BF6 /* UnconfirmedLanguageViewModelTranslator.swift */,
+				CB876CA83041C8FC323C0CB7 /* Basket.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -854,6 +866,7 @@
 				CB8762D2AEE244F407DD8660 /* LanguageType.swift in Sources */,
 				CB876FA509F21A13A1C81284 /* LanguageCatcherAPIDataManager.swift in Sources */,
 				CB876FDB37597607C2E23861 /* LanguageCatcherAPIDataManagerType.swift in Sources */,
+				CB876B16E483DACCC013F684 /* Basket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -877,6 +890,9 @@
 				CB876102B12F0B8BCAD89B48 /* UnconfirmedLanguageViewModelTranslatorSpec.swift in Sources */,
 				CB876EF93284C27CDDBE2444 /* TestingLanguageCatcherAPIDataManager.swift in Sources */,
 				CB876A50C029A70E4D7229CA /* LanguageCatcherAPIDataManagerSpec.swift in Sources */,
+				CB8761BCB56AE6F8A003A3F8 /* BasketSpec.swift in Sources */,
+				CB876CEAB1B9E16FDDBF5FC7 /* LanguageCatcherViewControllerSpec.swift in Sources */,
+				CB876F815F6A0952A6CC5546 /* TestingLanguageCatcherPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
