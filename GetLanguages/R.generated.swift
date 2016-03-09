@@ -7,7 +7,17 @@ import UIKit
 
 struct R {
   struct file {
+    static let propertiesJson = FileResource(bundle: _R.hostingBundle, name: "properties", pathExtension: "json")
     
+    static func propertiesJson(_: Void) -> NSURL? {
+      let fileResource = R.file.propertiesJson
+      return fileResource.bundle?.URLForResource(fileResource)
+    }
+    
+    static func propertiesJson(_: Void) -> String? {
+      let fileResource = R.file.propertiesJson
+      return fileResource.bundle?.pathForResource(fileResource)
+    }
   }
   
   struct font {
@@ -60,7 +70,7 @@ struct _R {
     }
     
     struct main: StoryboardResourceWithInitialControllerType {
-      typealias InitialController = ViewController
+      typealias InitialController = LanguageCatcherViewController
       
       let bundle = _R.hostingBundle
       let name = "Main"
