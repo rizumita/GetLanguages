@@ -17,26 +17,32 @@ class UnconfirmedLanguageViewModel: UnconfirmedLanguageViewModelType {
     var color:          UIColor {
         return colorMaker.color
     }
-    let shape: UIBezierPath = {
+    lazy var shape: UIBezierPath = {
+        //// Frames
+        let frame    = CGRectMake(0, 0, self.size, self.size)
+
+
+        //// Star Drawing
         let starPath = UIBezierPath()
-        starPath.moveToPoint(CGPointMake(15, 1))
-        starPath.addLineToPoint(CGPointMake(19.42, 9.92))
-        starPath.addLineToPoint(CGPointMake(29.27, 11.36))
-        starPath.addLineToPoint(CGPointMake(22.15, 18.32))
-        starPath.addLineToPoint(CGPointMake(23.82, 28.14))
-        starPath.addLineToPoint(CGPointMake(15, 23.51))
-        starPath.addLineToPoint(CGPointMake(6.18, 28.14))
-        starPath.addLineToPoint(CGPointMake(7.85, 18.32))
-        starPath.addLineToPoint(CGPointMake(0.73, 11.36))
-        starPath.addLineToPoint(CGPointMake(10.58, 9.92))
+        starPath.moveToPoint(CGPointMake(frame.minX + 0.50000 * frame.width, frame.minY + 0.03333 * frame.height))
+        starPath.addLineToPoint(CGPointMake(frame.minX + 0.64720 * frame.width, frame.minY + 0.33073 * frame.height))
+        starPath.addLineToPoint(CGPointMake(frame.minX + 0.97553 * frame.width, frame.minY + 0.37882 * frame.height))
+        starPath.addLineToPoint(CGPointMake(frame.minX + 0.73817 * frame.width, frame.minY + 0.61072 * frame.height))
+        starPath.addLineToPoint(CGPointMake(frame.minX + 0.79389 * frame.width, frame.minY + 0.93784 * frame.height))
+        starPath.addLineToPoint(CGPointMake(frame.minX + 0.50000 * frame.width, frame.minY + 0.78376 * frame.height))
+        starPath.addLineToPoint(CGPointMake(frame.minX + 0.20611 * frame.width, frame.minY + 0.93784 * frame.height))
+        starPath.addLineToPoint(CGPointMake(frame.minX + 0.26183 * frame.width, frame.minY + 0.61072 * frame.height))
+        starPath.addLineToPoint(CGPointMake(frame.minX + 0.02447 * frame.width, frame.minY + 0.37882 * frame.height))
+        starPath.addLineToPoint(CGPointMake(frame.minX + 0.35280 * frame.width, frame.minY + 0.33073 * frame.height))
         starPath.closePath()
         return starPath
     }()
 
-    let caughtSignal:   Signal<(), NoError>
-    let caughtObsevrer: Observer<(), NoError>
+    private let caughtSignal: Signal<(), NoError>
+    let caughtObsevrer:       Observer<(), NoError>
+    let caughtLanguageSignal: Signal<LanguageType, NoError>
+    private let caughtLanguageObsevrer: Observer<LanguageType, NoError>
 
-    private let language:        LanguageType
     private let positionMaker:   PositionMakerType
     private let colorMaker:      ColorMakerType
     private let _actionDuration: NSTimeInterval
@@ -47,14 +53,20 @@ class UnconfirmedLanguageViewModel: UnconfirmedLanguageViewModelType {
         return positionMaker.positionOnArea(area)
     }
 
+    private let disposable = CompositeDisposable()
+
     init(language: LanguageType, positionMaker: PositionMakerType, colorMaker: ColorMakerType, size: CGFloat = 30.0, actionDuration: NSTimeInterval = 4.0) {
-        self.language = language
         self.positionMaker = positionMaker
         self.colorMaker = colorMaker
         self.size = size
         self._actionDuration = actionDuration
 
         (caughtSignal, caughtObsevrer) = Signal.pipe()
+        (caughtLanguageSignal, caughtLanguageObsevrer) = Signal.pipe()
+
+        disposable += caughtSignal.map {
+            language
+        }.observe(caughtLanguageObsevrer)
     }
 
 }

@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		693BC09B3677B6498CD11C8E /* Pods_GetLanguagesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E90752372D30A86EC3A8FC7 /* Pods_GetLanguagesUITests.framework */; };
+		6A1F3CA71C8DBB3A00B9BA17 /* Rex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F3CA61C8DBB3A00B9BA17 /* Rex.framework */; };
+		6A1F3CAA1C8E43F100B9BA17 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F3CA81C8E43F100B9BA17 /* APIKit.framework */; };
+		6A1F3CAB1C8E43F100B9BA17 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F3CA91C8E43F100B9BA17 /* Himotoki.framework */; };
+		6A1F3CAF1C8E4B4200B9BA17 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F3CAD1C8E4B4200B9BA17 /* Realm.framework */; };
+		6A1F3CB01C8E4B4200B9BA17 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F3CAE1C8E4B4200B9BA17 /* RealmSwift.framework */; };
 		6AC48A9E1C8B9419002E2890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC48A9D1C8B9419002E2890 /* AppDelegate.swift */; };
-		6AC48AA01C8B9419002E2890 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC48A9F1C8B9419002E2890 /* ViewController.swift */; };
 		6AC48AA31C8B9419002E2890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC48AA11C8B9419002E2890 /* Main.storyboard */; };
 		6AC48AA51C8B9419002E2890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AC48AA41C8B9419002E2890 /* Assets.xcassets */; };
 		6AC48AA81C8B9419002E2890 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC48AA61C8B9419002E2890 /* LaunchScreen.storyboard */; };
@@ -28,28 +33,57 @@
 		6AC48AE41C8BAC48002E2890 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC48AD51C8B96B9002E2890 /* Result.framework */; };
 		6AC48AE61C8BAC89002E2890 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC48ACE1C8B96AF002E2890 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6AC48AE71C8BAC89002E2890 /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC48ACF1C8B96AF002E2890 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6ACE14671C8F963A00DADF3F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F3CAD1C8E4B4200B9BA17 /* Realm.framework */; };
+		6ACE14681C8F963A00DADF3F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F3CAE1C8E4B4200B9BA17 /* RealmSwift.framework */; };
 		70E3DFDB1A68E155CB5AC1C1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA38DAC5133A10222B6C1379 /* Pods.framework */; };
+		CB876059D1304DF4A8E77E9F /* LanguageInfoTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876DD891B03CFF57EADEE8 /* LanguageInfoTranslator.swift */; };
+		CB87607064FDD0752554E42A /* LanguageInfoTranslatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876EA1B1A91B8A9064B6B2 /* LanguageInfoTranslatorSpec.swift */; };
+		CB87607897BB6CDF0C8F56A8 /* LanguageCatcherInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8767B9EFE47F89F040AFD5 /* LanguageCatcherInteractorSpec.swift */; };
 		CB8760D3AD4D4398D9790BC9 /* LanguageCatcherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876624267F0EE1CD42FBE8 /* LanguageCatcherPresenter.swift */; };
+		CB8760DB0A487F8EA8CC4BB8 /* properties.json in Resources */ = {isa = PBXBuildFile; fileRef = CB8768929774F9EF0086E0C0 /* properties.json */; };
+		CB876102B12F0B8BCAD89B48 /* UnconfirmedLanguageViewModelTranslatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876A7B7922C9B542255BCB /* UnconfirmedLanguageViewModelTranslatorSpec.swift */; };
 		CB8761E51C63FF06C1CBDC39 /* StaticColorMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8761346FDEE041788E4DF6 /* StaticColorMaker.swift */; };
 		CB87624270DEB3218C8796DE /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8765D70EDEEC00234F1D50 /* Assembler.swift */; };
-		CB8763943702BB05828BDEA6 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876ADC7535F680C4DF076A /* LanguageType.swift */; };
+		CB8762D2AEE244F407DD8660 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87638C77D51F35CF39AE12 /* LanguageType.swift */; };
+		CB87635424767F9B8A34E9E7 /* LanguageCatcherLocalDataManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876F347C66AF50277C1930 /* LanguageCatcherLocalDataManagerSpec.swift */; };
+		CB8763A54BE86FDC37DCCF05 /* WikipediaCategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876B15038C561FBDF6111C /* WikipediaCategoryRequest.swift */; };
 		CB8764055461FEB004EC2F25 /* LanguageCatcherAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876605F8D738DB49BFF555 /* LanguageCatcherAssembly.swift */; };
+		CB8764521B21DA4F91D7DAF8 /* LanguageCatcherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876E9A9625EF9D4288880E /* LanguageCatcherDataManager.swift */; };
+		CB8764832C45ADEDD9475E4F /* UnconfirmedLanguageViewModelTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876598C5B9CF6D7B2E3BF6 /* UnconfirmedLanguageViewModelTranslator.swift */; };
 		CB876485F97978356A0F43FF /* PositionMakerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8761657A280B37B3142540 /* PositionMakerType.swift */; };
+		CB876489D10FA86609F2D8EF /* UnconfirmedLanguageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8760EBF62CF38980D1602E /* UnconfirmedLanguageSpec.swift */; };
+		CB8764E1174D01F0D89B1C69 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876C15D5AC33AD5B31FA02 /* Translator.swift */; };
+		CB8764E146C485560FDA2459 /* RandomColorMakerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8766C79A38ACBC67139D0C /* RandomColorMakerSpec.swift */; };
+		CB8765582174D12CA711ADDD /* LanguageCatcherDataManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876623B408427053D1C648 /* LanguageCatcherDataManagerType.swift */; };
 		CB8765A29D09A21708313727 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876E960D62167209BD76AE /* FieldView.swift */; };
+		CB8765F48A0670DF27644EA9 /* WikipediaRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876FB05C8188F238E2E434 /* WikipediaRequestType.swift */; };
 		CB87661BE8C6F86F25214702 /* StaticPositionMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876BB545493AF489D1E126 /* StaticPositionMaker.swift */; };
 		CB8766DC9800684E52726E06 /* UnconfirmedLanguageViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87649FB95332C3464B222A /* UnconfirmedLanguageViewModelSpec.swift */; };
 		CB8766E543C0C0BC032D9FC5 /* UnconfirmedLanguageViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876F6D50C9B69D7E570A53 /* UnconfirmedLanguageViewModelType.swift */; };
 		CB8767857995C217078C65BA /* UnconfirmedLanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876FA6A25ABCC8B7031979 /* UnconfirmedLanguageViewModel.swift */; };
+		CB876819C0BC3F4E0F4A823E /* category_failed.json in Resources */ = {isa = PBXBuildFile; fileRef = CB87637EBD1D278B783C7E10 /* category_failed.json */; };
 		CB8768290AE1C27614A9815F /* UnconfirmedLanguageViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87646280F1D53BAC01D3FD /* UnconfirmedLanguageViewSpec.swift */; };
+		CB87682ED3FA024D1D6684D3 /* RandomPositionMakerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8767DA094AF7C837A91398 /* RandomPositionMakerSpec.swift */; };
+		CB876840C01B6C8AF54D567F /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = CB876AB15408581659E7188A /* category.json */; };
 		CB87684226157B7ECA7CBB58 /* ProgrammingLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8764C47B7B5A7CD63C3211 /* ProgrammingLanguage.swift */; };
 		CB8768C0084C6D1D838D5C44 /* ColorMakerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876B3C6E1766C0824D30ED /* ColorMakerType.swift */; };
 		CB876978EB0BE6D3AAAADAAC /* LanguageCatcherPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8764900B577BA40855B3B9 /* LanguageCatcherPresenterSpec.swift */; };
-		CB876AAEF1D4901A4F939E03 /* NaturalLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8766E18DA3B23328273341 /* NaturalLanguage.swift */; };
+		CB876A50C029A70E4D7229CA /* LanguageCatcherAPIDataManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8762B8410C3BD56E148B62 /* LanguageCatcherAPIDataManagerSpec.swift */; };
+		CB876B0289AF03EE2038881B /* LanguageCatcherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8762066CCECCD64B2D5DDC /* LanguageCatcherInteractor.swift */; };
+		CB876B30160AF2CC5BFAFAB0 /* LanguageCatcherInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876ACFA2CAC4CC48B0F65F /* LanguageCatcherInteractorType.swift */; };
+		CB876D0926013C22191B73EF /* LanguageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8761956AC6BA86047BE1C8 /* LanguageInfo.swift */; };
+		CB876D27C9651ECBE0BF50B2 /* TestingLanguageCatcherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876878F38D46C508908C6D /* TestingLanguageCatcherInteractor.swift */; };
 		CB876D51F7E7A9054D29ABD9 /* RandomColorMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8761C66B10CC08F13FDF3C /* RandomColorMaker.swift */; };
+		CB876EF93284C27CDDBE2444 /* TestingLanguageCatcherAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876E46A27ED877CCB976EC /* TestingLanguageCatcherAPIDataManager.swift */; };
 		CB876F0E3027781AB4201C66 /* ReactiveCocoa+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876509285922EC1AC2B342 /* ReactiveCocoa+Extensions.swift */; };
+		CB876F10F572F807B2ACD5D4 /* TranslatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8767B81FF2D57EA017DE7E /* TranslatorType.swift */; };
 		CB876F14B31A55CFE6AE7FA6 /* UnconfirmedLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8769A656C96B8E42D4AA91 /* UnconfirmedLanguageView.swift */; };
 		CB876F4551C3195FEB8FAE81 /* RandomPositionMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87639E1189084FDC321BB4 /* RandomPositionMaker.swift */; };
+		CB876F5A0BB980A95F165A05 /* TestingLanguageCatcherLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876DFBC34DA8F31EB9D16C /* TestingLanguageCatcherLocalDataManager.swift */; };
+		CB876FA509F21A13A1C81284 /* LanguageCatcherAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876076EB99CD2A628D3963 /* LanguageCatcherAPIDataManager.swift */; };
 		CB876FB2DD8CDD1C42A7D1FE /* LanguageCatcherPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8760A0CC6A699DC8C0A577 /* LanguageCatcherPresenterType.swift */; };
+		CB876FDB37597607C2E23861 /* LanguageCatcherAPIDataManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8766D2DDE5622D8ED70003 /* LanguageCatcherAPIDataManagerType.swift */; };
+		DC1B752D471D26F7D7D5AAAA /* Pods_GetLanguagesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19F5A429DC9650A17434684 /* Pods_GetLanguagesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,9 +119,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1832494ABAAACCD2ADFA5039 /* Pods-GetLanguagesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetLanguagesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetLanguagesUITests/Pods-GetLanguagesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1DBB9ED33DDC808C88C3B514 /* Pods-GetLanguagesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetLanguagesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetLanguagesTests/Pods-GetLanguagesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D42D7F9D5935409AF145BF0 /* Pods-GetLanguagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetLanguagesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetLanguagesTests/Pods-GetLanguagesTests.release.xcconfig"; sourceTree = "<group>"; };
+		6A1F3CA61C8DBB3A00B9BA17 /* Rex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rex.framework; path = Carthage/Build/iOS/Rex.framework; sourceTree = "<group>"; };
+		6A1F3CA81C8E43F100B9BA17 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		6A1F3CA91C8E43F100B9BA17 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		6A1F3CAC1C8E446600B9BA17 /* GetLanguages.paw */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GetLanguages.paw; sourceTree = "<group>"; };
+		6A1F3CAD1C8E4B4200B9BA17 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		6A1F3CAE1C8E4B4200B9BA17 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		6AC48A9A1C8B9419002E2890 /* GetLanguages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetLanguages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AC48A9D1C8B9419002E2890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6AC48A9F1C8B9419002E2890 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6AC48AA21C8B9419002E2890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AC48AA41C8B9419002E2890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AC48AA71C8B9419002E2890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -108,29 +150,58 @@
 		6AC48ADF1C8B9AA4002E2890 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		6AC48AE01C8B9EAD002E2890 /* LanguageCatcherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherViewController.swift; sourceTree = "<group>"; };
 		6AC48AE81C8CE68C002E2890 /* GetLanguages.pcvd */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = GetLanguages.pcvd; path = GetLanguages/GetLanguages.pcvd; sourceTree = "<group>"; };
+		6E90752372D30A86EC3A8FC7 /* Pods_GetLanguagesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetLanguagesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD708EBACC7FBE44D48B67F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		88D91ACE3700DB9B499F6161 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C47D026B2A21C5562E30C051 /* Pods-GetLanguagesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetLanguagesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetLanguagesUITests/Pods-GetLanguagesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB876076EB99CD2A628D3963 /* LanguageCatcherAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherAPIDataManager.swift; sourceTree = "<group>"; };
 		CB8760A0CC6A699DC8C0A577 /* LanguageCatcherPresenterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherPresenterType.swift; sourceTree = "<group>"; };
+		CB8760EBF62CF38980D1602E /* UnconfirmedLanguageSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageSpec.swift; sourceTree = "<group>"; };
 		CB8761346FDEE041788E4DF6 /* StaticColorMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticColorMaker.swift; sourceTree = "<group>"; };
 		CB8761657A280B37B3142540 /* PositionMakerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionMakerType.swift; sourceTree = "<group>"; };
+		CB8761956AC6BA86047BE1C8 /* LanguageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageInfo.swift; sourceTree = "<group>"; };
 		CB8761C66B10CC08F13FDF3C /* RandomColorMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorMaker.swift; sourceTree = "<group>"; };
+		CB8762066CCECCD64B2D5DDC /* LanguageCatcherInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherInteractor.swift; sourceTree = "<group>"; };
+		CB8762B8410C3BD56E148B62 /* LanguageCatcherAPIDataManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherAPIDataManagerSpec.swift; sourceTree = "<group>"; };
+		CB87637EBD1D278B783C7E10 /* category_failed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category_failed.json; sourceTree = "<group>"; };
+		CB87638C77D51F35CF39AE12 /* LanguageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
 		CB87639E1189084FDC321BB4 /* RandomPositionMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomPositionMaker.swift; sourceTree = "<group>"; };
 		CB87646280F1D53BAC01D3FD /* UnconfirmedLanguageViewSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageViewSpec.swift; sourceTree = "<group>"; };
 		CB8764900B577BA40855B3B9 /* LanguageCatcherPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherPresenterSpec.swift; sourceTree = "<group>"; };
 		CB87649FB95332C3464B222A /* UnconfirmedLanguageViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageViewModelSpec.swift; sourceTree = "<group>"; };
 		CB8764C47B7B5A7CD63C3211 /* ProgrammingLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguage.swift; sourceTree = "<group>"; };
 		CB876509285922EC1AC2B342 /* ReactiveCocoa+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReactiveCocoa+Extensions.swift"; sourceTree = "<group>"; };
+		CB876598C5B9CF6D7B2E3BF6 /* UnconfirmedLanguageViewModelTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageViewModelTranslator.swift; sourceTree = "<group>"; };
 		CB8765D70EDEEC00234F1D50 /* Assembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
 		CB876605F8D738DB49BFF555 /* LanguageCatcherAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherAssembly.swift; sourceTree = "<group>"; };
+		CB876623B408427053D1C648 /* LanguageCatcherDataManagerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherDataManagerType.swift; sourceTree = "<group>"; };
 		CB876624267F0EE1CD42FBE8 /* LanguageCatcherPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherPresenter.swift; sourceTree = "<group>"; };
-		CB8766E18DA3B23328273341 /* NaturalLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaturalLanguage.swift; sourceTree = "<group>"; };
+		CB8766C79A38ACBC67139D0C /* RandomColorMakerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorMakerSpec.swift; sourceTree = "<group>"; };
+		CB8766D2DDE5622D8ED70003 /* LanguageCatcherAPIDataManagerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherAPIDataManagerType.swift; sourceTree = "<group>"; };
+		CB8767B81FF2D57EA017DE7E /* TranslatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslatorType.swift; sourceTree = "<group>"; };
+		CB8767B9EFE47F89F040AFD5 /* LanguageCatcherInteractorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherInteractorSpec.swift; sourceTree = "<group>"; };
+		CB8767DA094AF7C837A91398 /* RandomPositionMakerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomPositionMakerSpec.swift; sourceTree = "<group>"; };
+		CB876878F38D46C508908C6D /* TestingLanguageCatcherInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingLanguageCatcherInteractor.swift; sourceTree = "<group>"; };
+		CB8768929774F9EF0086E0C0 /* properties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = properties.json; sourceTree = "<group>"; };
 		CB8769A656C96B8E42D4AA91 /* UnconfirmedLanguageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageView.swift; sourceTree = "<group>"; };
-		CB876ADC7535F680C4DF076A /* LanguageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
+		CB876A7B7922C9B542255BCB /* UnconfirmedLanguageViewModelTranslatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageViewModelTranslatorSpec.swift; sourceTree = "<group>"; };
+		CB876AB15408581659E7188A /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
+		CB876ACFA2CAC4CC48B0F65F /* LanguageCatcherInteractorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherInteractorType.swift; sourceTree = "<group>"; };
+		CB876B15038C561FBDF6111C /* WikipediaCategoryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikipediaCategoryRequest.swift; sourceTree = "<group>"; };
 		CB876B3C6E1766C0824D30ED /* ColorMakerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorMakerType.swift; sourceTree = "<group>"; };
 		CB876BB545493AF489D1E126 /* StaticPositionMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticPositionMaker.swift; sourceTree = "<group>"; };
+		CB876C15D5AC33AD5B31FA02 /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		CB876DD891B03CFF57EADEE8 /* LanguageInfoTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageInfoTranslator.swift; sourceTree = "<group>"; };
+		CB876DFBC34DA8F31EB9D16C /* TestingLanguageCatcherLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingLanguageCatcherLocalDataManager.swift; sourceTree = "<group>"; };
+		CB876E46A27ED877CCB976EC /* TestingLanguageCatcherAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingLanguageCatcherAPIDataManager.swift; sourceTree = "<group>"; };
 		CB876E960D62167209BD76AE /* FieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
+		CB876E9A9625EF9D4288880E /* LanguageCatcherDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherDataManager.swift; sourceTree = "<group>"; };
+		CB876EA1B1A91B8A9064B6B2 /* LanguageInfoTranslatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageInfoTranslatorSpec.swift; sourceTree = "<group>"; };
+		CB876F347C66AF50277C1930 /* LanguageCatcherLocalDataManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherLocalDataManagerSpec.swift; sourceTree = "<group>"; };
 		CB876F6D50C9B69D7E570A53 /* UnconfirmedLanguageViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageViewModelType.swift; sourceTree = "<group>"; };
 		CB876FA6A25ABCC8B7031979 /* UnconfirmedLanguageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageViewModel.swift; sourceTree = "<group>"; };
+		CB876FB05C8188F238E2E434 /* WikipediaRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikipediaRequestType.swift; sourceTree = "<group>"; };
+		D19F5A429DC9650A17434684 /* Pods_GetLanguagesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetLanguagesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA38DAC5133A10222B6C1379 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -142,9 +213,14 @@
 				6AC48ADA1C8B96B9002E2890 /* Result.framework in Frameworks */,
 				70E3DFDB1A68E155CB5AC1C1 /* Pods.framework in Frameworks */,
 				6AC48AD91C8B96B9002E2890 /* ReactiveCocoa.framework in Frameworks */,
+				6A1F3CA71C8DBB3A00B9BA17 /* Rex.framework in Frameworks */,
+				6A1F3CAF1C8E4B4200B9BA17 /* Realm.framework in Frameworks */,
 				6AC48ADD1C8B96B9002E2890 /* TransitionOperator.framework in Frameworks */,
+				6A1F3CB01C8E4B4200B9BA17 /* RealmSwift.framework in Frameworks */,
 				6AC48ADC1C8B96B9002E2890 /* Swinject.framework in Frameworks */,
+				6A1F3CAA1C8E43F100B9BA17 /* APIKit.framework in Frameworks */,
 				6AC48ADB1C8B96B9002E2890 /* Swiftz.framework in Frameworks */,
+				6A1F3CAB1C8E43F100B9BA17 /* Himotoki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,10 +228,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ACE14671C8F963A00DADF3F /* Realm.framework in Frameworks */,
 				6AC48AD21C8B96AF002E2890 /* Quick.framework in Frameworks */,
+				6ACE14681C8F963A00DADF3F /* RealmSwift.framework in Frameworks */,
 				6AC48AE31C8BAC43002E2890 /* ReactiveCocoa.framework in Frameworks */,
 				6AC48AD01C8B96AF002E2890 /* Nimble.framework in Frameworks */,
 				6AC48AE41C8BAC48002E2890 /* Result.framework in Frameworks */,
+				DC1B752D471D26F7D7D5AAAA /* Pods_GetLanguagesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +244,7 @@
 			files = (
 				6AC48AD31C8B96AF002E2890 /* Quick.framework in Frameworks */,
 				6AC48AD11C8B96AF002E2890 /* Nimble.framework in Frameworks */,
+				693BC09B3677B6498CD11C8E /* Pods_GetLanguagesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +254,11 @@
 		3DADA1732B535E300625EB97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A1F3CAD1C8E4B4200B9BA17 /* Realm.framework */,
+				6A1F3CAE1C8E4B4200B9BA17 /* RealmSwift.framework */,
+				6A1F3CA81C8E43F100B9BA17 /* APIKit.framework */,
+				6A1F3CA91C8E43F100B9BA17 /* Himotoki.framework */,
+				6A1F3CA61C8DBB3A00B9BA17 /* Rex.framework */,
 				6AC48AD41C8B96B9002E2890 /* ReactiveCocoa.framework */,
 				6AC48AD51C8B96B9002E2890 /* Result.framework */,
 				6AC48AD61C8B96B9002E2890 /* Swiftz.framework */,
@@ -182,6 +267,8 @@
 				6AC48ACE1C8B96AF002E2890 /* Nimble.framework */,
 				6AC48ACF1C8B96AF002E2890 /* Quick.framework */,
 				FA38DAC5133A10222B6C1379 /* Pods.framework */,
+				D19F5A429DC9650A17434684 /* Pods_GetLanguagesTests.framework */,
+				6E90752372D30A86EC3A8FC7 /* Pods_GetLanguagesUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,6 +278,7 @@
 			children = (
 				6AC48ADF1C8B9AA4002E2890 /* Playground.playground */,
 				6AC48AE81C8CE68C002E2890 /* GetLanguages.pcvd */,
+				6A1F3CAC1C8E446600B9BA17 /* GetLanguages.paw */,
 				6AC48A9C1C8B9419002E2890 /* GetLanguages */,
 				6AC48AB11C8B9419002E2890 /* GetLanguagesTests */,
 				6AC48ABC1C8B9419002E2890 /* GetLanguagesUITests */,
@@ -215,7 +303,6 @@
 			children = (
 				6AC48ACC1C8B9584002E2890 /* R.generated.swift */,
 				6AC48A9D1C8B9419002E2890 /* AppDelegate.swift */,
-				6AC48A9F1C8B9419002E2890 /* ViewController.swift */,
 				6AC48AA11C8B9419002E2890 /* Main.storyboard */,
 				6AC48AA41C8B9419002E2890 /* Assets.xcassets */,
 				6AC48AA61C8B9419002E2890 /* LaunchScreen.storyboard */,
@@ -223,6 +310,7 @@
 				CB8760AD41C2D665E079BAF7 /* Modules */,
 				CB87629726E5C5B7BABD2AF9 /* Assemblies */,
 				CB876A20A2A650ED77211AAD /* Extensions */,
+				CB8768929774F9EF0086E0C0 /* properties.json */,
 			);
 			path = GetLanguages;
 			sourceTree = "<group>";
@@ -263,6 +351,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CB876090D9725E5AFE96F7DA /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				CB876623B408427053D1C648 /* LanguageCatcherDataManagerType.swift */,
+				CB876E9A9625EF9D4288880E /* LanguageCatcherDataManager.swift */,
+				CB876076EB99CD2A628D3963 /* LanguageCatcherAPIDataManager.swift */,
+				CB8766D2DDE5622D8ED70003 /* LanguageCatcherAPIDataManagerType.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		CB8760AD41C2D665E079BAF7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +369,17 @@
 				CB876AA8B24AE24D51DA3BF2 /* Commons */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		CB876244DE1FF51C76E97483 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CB876ACFA2CAC4CC48B0F65F /* LanguageCatcherInteractorType.swift */,
+				CB8762066CCECCD64B2D5DDC /* LanguageCatcherInteractor.swift */,
+				CB8761956AC6BA86047BE1C8 /* LanguageInfo.swift */,
+				CB876DD891B03CFF57EADEE8 /* LanguageInfoTranslator.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		CB87629726E5C5B7BABD2AF9 /* Assemblies */ = {
@@ -284,9 +394,10 @@
 		CB876666793F9B13D270DCC2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CB876ADC7535F680C4DF076A /* LanguageType.swift */,
-				CB8766E18DA3B23328273341 /* NaturalLanguage.swift */,
 				CB8764C47B7B5A7CD63C3211 /* ProgrammingLanguage.swift */,
+				CB876FB05C8188F238E2E434 /* WikipediaRequestType.swift */,
+				CB876B15038C561FBDF6111C /* WikipediaCategoryRequest.swift */,
+				CB87638C77D51F35CF39AE12 /* LanguageType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,8 +407,21 @@
 			children = (
 				CB87689AF98DDF9E262A211D /* Presenter */,
 				CB876F2FE71C86E4E788E17E /* View */,
+				CB8768780932613C1F15EE43 /* Interactor */,
+				CB876BA3EAD1BA300DA0A7E9 /* DataManager */,
 			);
 			path = LanguageCatcher;
+			sourceTree = "<group>";
+		};
+		CB8768780932613C1F15EE43 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CB8767B9EFE47F89F040AFD5 /* LanguageCatcherInteractorSpec.swift */,
+				CB876878F38D46C508908C6D /* TestingLanguageCatcherInteractor.swift */,
+				CB8760EBF62CF38980D1602E /* UnconfirmedLanguageSpec.swift */,
+				CB876EA1B1A91B8A9064B6B2 /* LanguageInfoTranslatorSpec.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		CB87689AF98DDF9E262A211D /* Presenter */ = {
@@ -307,6 +431,9 @@
 				CB87649FB95332C3464B222A /* UnconfirmedLanguageViewModelSpec.swift */,
 				CB8761346FDEE041788E4DF6 /* StaticColorMaker.swift */,
 				CB876BB545493AF489D1E126 /* StaticPositionMaker.swift */,
+				CB8766C79A38ACBC67139D0C /* RandomColorMakerSpec.swift */,
+				CB8767DA094AF7C837A91398 /* RandomPositionMakerSpec.swift */,
+				CB876A7B7922C9B542255BCB /* UnconfirmedLanguageViewModelTranslatorSpec.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -323,8 +450,23 @@
 			isa = PBXGroup;
 			children = (
 				CB876666793F9B13D270DCC2 /* Model */,
+				CB8767B81FF2D57EA017DE7E /* TranslatorType.swift */,
+				CB876C15D5AC33AD5B31FA02 /* Translator.swift */,
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		CB876BA3EAD1BA300DA0A7E9 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				CB876F347C66AF50277C1930 /* LanguageCatcherLocalDataManagerSpec.swift */,
+				CB876AB15408581659E7188A /* category.json */,
+				CB876DFBC34DA8F31EB9D16C /* TestingLanguageCatcherLocalDataManager.swift */,
+				CB87637EBD1D278B783C7E10 /* category_failed.json */,
+				CB876E46A27ED877CCB976EC /* TestingLanguageCatcherAPIDataManager.swift */,
+				CB8762B8410C3BD56E148B62 /* LanguageCatcherAPIDataManagerSpec.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		CB876F131C38D21AFDC21699 /* LanguageCatcher */ = {
@@ -332,6 +474,8 @@
 			children = (
 				CB87608D3709F7BA1DD9F660 /* View */,
 				CB876F95B7F3A9CE894B6874 /* Presenter */,
+				CB876244DE1FF51C76E97483 /* Interactor */,
+				CB876090D9725E5AFE96F7DA /* DataManager */,
 			);
 			path = LanguageCatcher;
 			sourceTree = "<group>";
@@ -355,6 +499,7 @@
 				CB87639E1189084FDC321BB4 /* RandomPositionMaker.swift */,
 				CB876B3C6E1766C0824D30ED /* ColorMakerType.swift */,
 				CB8761C66B10CC08F13FDF3C /* RandomColorMaker.swift */,
+				CB876598C5B9CF6D7B2E3BF6 /* UnconfirmedLanguageViewModelTranslator.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -364,6 +509,10 @@
 			children = (
 				88D91ACE3700DB9B499F6161 /* Pods.debug.xcconfig */,
 				7FD708EBACC7FBE44D48B67F /* Pods.release.xcconfig */,
+				1DBB9ED33DDC808C88C3B514 /* Pods-GetLanguagesTests.debug.xcconfig */,
+				5D42D7F9D5935409AF145BF0 /* Pods-GetLanguagesTests.release.xcconfig */,
+				C47D026B2A21C5562E30C051 /* Pods-GetLanguagesUITests.debug.xcconfig */,
+				1832494ABAAACCD2ADFA5039 /* Pods-GetLanguagesUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -397,10 +546,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AC48AC51C8B9419002E2890 /* Build configuration list for PBXNativeTarget "GetLanguagesTests" */;
 			buildPhases = (
+				F4FB80EF51D925A8EC422030 /* Check Pods Manifest.lock */,
 				6AC48AAA1C8B9419002E2890 /* Sources */,
 				6AC48AAB1C8B9419002E2890 /* Frameworks */,
 				6AC48AAC1C8B9419002E2890 /* Resources */,
 				6AC48AE51C8BAC77002E2890 /* Copy Frameworks */,
+				DEA7E488D4A1951187F56A8C /* Embed Pods Frameworks */,
+				1EEFB803F9AD602FB129751F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -416,9 +568,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AC48AC81C8B9419002E2890 /* Build configuration list for PBXNativeTarget "GetLanguagesUITests" */;
 			buildPhases = (
+				E3A4F53D39DD13C2D4544532 /* Check Pods Manifest.lock */,
 				6AC48AB51C8B9419002E2890 /* Sources */,
 				6AC48AB61C8B9419002E2890 /* Frameworks */,
 				6AC48AB71C8B9419002E2890 /* Resources */,
+				2AF5630C3DB0B974E4BBEDE1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -481,6 +635,7 @@
 				6AC48AA81C8B9419002E2890 /* LaunchScreen.storyboard in Resources */,
 				6AC48AA51C8B9419002E2890 /* Assets.xcassets in Resources */,
 				6AC48AA31C8B9419002E2890 /* Main.storyboard in Resources */,
+				CB8760DB0A487F8EA8CC4BB8 /* properties.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +643,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB876840C01B6C8AF54D567F /* category.json in Resources */,
+				CB876819C0BC3F4E0F4A823E /* category_failed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +658,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1EEFB803F9AD602FB129751F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GetLanguagesTests/Pods-GetLanguagesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		25508039FD1DE7C6E4E65D63 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,6 +686,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AF5630C3DB0B974E4BBEDE1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GetLanguagesUITests/Pods-GetLanguagesUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5E1BBF90ABC025DB03057CA7 /* Embed Pods Frameworks */ = {
@@ -556,6 +743,11 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Swiftz.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/TransitionOperator.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Rex.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -579,6 +771,51 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		DEA7E488D4A1951187F56A8C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GetLanguagesTests/Pods-GetLanguagesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3A4F53D39DD13C2D4544532 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4FB80EF51D925A8EC422030 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -586,7 +823,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC48AA01C8B9419002E2890 /* ViewController.swift in Sources */,
 				6AC48A9E1C8B9419002E2890 /* AppDelegate.swift in Sources */,
 				6AC48ACD1C8B9584002E2890 /* R.generated.swift in Sources */,
 				6AC48AE11C8B9EAD002E2890 /* LanguageCatcherViewController.swift in Sources */,
@@ -595,8 +831,6 @@
 				CB8764055461FEB004EC2F25 /* LanguageCatcherAssembly.swift in Sources */,
 				CB87624270DEB3218C8796DE /* Assembler.swift in Sources */,
 				CB8767857995C217078C65BA /* UnconfirmedLanguageViewModel.swift in Sources */,
-				CB8763943702BB05828BDEA6 /* LanguageType.swift in Sources */,
-				CB876AAEF1D4901A4F939E03 /* NaturalLanguage.swift in Sources */,
 				CB87684226157B7ECA7CBB58 /* ProgrammingLanguage.swift in Sources */,
 				CB8765A29D09A21708313727 /* FieldView.swift in Sources */,
 				CB876F14B31A55CFE6AE7FA6 /* UnconfirmedLanguageView.swift in Sources */,
@@ -606,6 +840,20 @@
 				CB876F4551C3195FEB8FAE81 /* RandomPositionMaker.swift in Sources */,
 				CB8768C0084C6D1D838D5C44 /* ColorMakerType.swift in Sources */,
 				CB876D51F7E7A9054D29ABD9 /* RandomColorMaker.swift in Sources */,
+				CB876B30160AF2CC5BFAFAB0 /* LanguageCatcherInteractorType.swift in Sources */,
+				CB876B0289AF03EE2038881B /* LanguageCatcherInteractor.swift in Sources */,
+				CB8764832C45ADEDD9475E4F /* UnconfirmedLanguageViewModelTranslator.swift in Sources */,
+				CB876F10F572F807B2ACD5D4 /* TranslatorType.swift in Sources */,
+				CB8765582174D12CA711ADDD /* LanguageCatcherDataManagerType.swift in Sources */,
+				CB8764521B21DA4F91D7DAF8 /* LanguageCatcherDataManager.swift in Sources */,
+				CB8765F48A0670DF27644EA9 /* WikipediaRequestType.swift in Sources */,
+				CB8763A54BE86FDC37DCCF05 /* WikipediaCategoryRequest.swift in Sources */,
+				CB876D0926013C22191B73EF /* LanguageInfo.swift in Sources */,
+				CB876059D1304DF4A8E77E9F /* LanguageInfoTranslator.swift in Sources */,
+				CB8764E1174D01F0D89B1C69 /* Translator.swift in Sources */,
+				CB8762D2AEE244F407DD8660 /* LanguageType.swift in Sources */,
+				CB876FA509F21A13A1C81284 /* LanguageCatcherAPIDataManager.swift in Sources */,
+				CB876FDB37597607C2E23861 /* LanguageCatcherAPIDataManagerType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +866,17 @@
 				CB8766DC9800684E52726E06 /* UnconfirmedLanguageViewModelSpec.swift in Sources */,
 				CB8761E51C63FF06C1CBDC39 /* StaticColorMaker.swift in Sources */,
 				CB87661BE8C6F86F25214702 /* StaticPositionMaker.swift in Sources */,
+				CB87607897BB6CDF0C8F56A8 /* LanguageCatcherInteractorSpec.swift in Sources */,
+				CB876D27C9651ECBE0BF50B2 /* TestingLanguageCatcherInteractor.swift in Sources */,
+				CB87635424767F9B8A34E9E7 /* LanguageCatcherLocalDataManagerSpec.swift in Sources */,
+				CB876F5A0BB980A95F165A05 /* TestingLanguageCatcherLocalDataManager.swift in Sources */,
+				CB876489D10FA86609F2D8EF /* UnconfirmedLanguageSpec.swift in Sources */,
+				CB87607064FDD0752554E42A /* LanguageInfoTranslatorSpec.swift in Sources */,
+				CB8764E146C485560FDA2459 /* RandomColorMakerSpec.swift in Sources */,
+				CB87682ED3FA024D1D6684D3 /* RandomPositionMakerSpec.swift in Sources */,
+				CB876102B12F0B8BCAD89B48 /* UnconfirmedLanguageViewModelTranslatorSpec.swift in Sources */,
+				CB876EF93284C27CDDBE2444 /* TestingLanguageCatcherAPIDataManager.swift in Sources */,
+				CB876A50C029A70E4D7229CA /* LanguageCatcherAPIDataManagerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,6 +1040,7 @@
 		};
 		6AC48AC61C8B9419002E2890 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBB9ED33DDC808C88C3B514 /* Pods-GetLanguagesTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -797,6 +1057,7 @@
 		};
 		6AC48AC71C8B9419002E2890 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D42D7F9D5935409AF145BF0 /* Pods-GetLanguagesTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -813,6 +1074,7 @@
 		};
 		6AC48AC91C8B9419002E2890 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C47D026B2A21C5562E30C051 /* Pods-GetLanguagesUITests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -829,6 +1091,7 @@
 		};
 		6AC48ACA1C8B9419002E2890 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1832494ABAAACCD2ADFA5039 /* Pods-GetLanguagesUITests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

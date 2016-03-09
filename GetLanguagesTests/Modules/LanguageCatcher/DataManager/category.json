@@ -1,0 +1,1467 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "categorymembers": [
+      {
+        "pageid": 69,
+        "ns": 0,
+        "title": "プログラミング言語"
+      },
+      {
+        "pageid": 3308817,
+        "ns": 10,
+        "title": "Template:プログラミング言語一覧"
+      },
+      {
+        "pageid": 884443,
+        "ns": 10,
+        "title": "Template:ProgLangCompare"
+      },
+      {
+        "pageid": 24150,
+        "ns": 0,
+        "title": "プログラミング言語一覧"
+      },
+      {
+        "pageid": 782218,
+        "ns": 0,
+        "title": "プログラミング言語の比較"
+      },
+      {
+        "pageid": 189629,
+        "ns": 0,
+        "title": "プログラミング言語年表"
+      },
+      {
+        "pageid": 194705,
+        "ns": 0,
+        "title": "4GL"
+      },
+      {
+        "pageid": 1210240,
+        "ns": 0,
+        "title": "A+"
+      },
+      {
+        "pageid": 1113398,
+        "ns": 0,
+        "title": "A-0 System"
+      },
+      {
+        "pageid": 1268970,
+        "ns": 0,
+        "title": "ABAP"
+      },
+      {
+        "pageid": 1378216,
+        "ns": 0,
+        "title": "ABC (プログラミング言語)"
+      },
+      {
+        "pageid": 1498,
+        "ns": 0,
+        "title": "Ada"
+      },
+      {
+        "pageid": 13346,
+        "ns": 0,
+        "title": "ALGOL"
+      },
+      {
+        "pageid": 3293950,
+        "ns": 0,
+        "title": "Alloy Analyzer"
+      },
+      {
+        "pageid": 13381,
+        "ns": 0,
+        "title": "APL"
+      },
+      {
+        "pageid": 1516339,
+        "ns": 0,
+        "title": "Autocode"
+      },
+      {
+        "pageid": 2858,
+        "ns": 0,
+        "title": "AWK"
+      },
+      {
+        "pageid": 8096,
+        "ns": 0,
+        "title": "B言語"
+      },
+      {
+        "pageid": 1487,
+        "ns": 0,
+        "title": "BASIC"
+      },
+      {
+        "pageid": 164969,
+        "ns": 0,
+        "title": "BCPL"
+      },
+      {
+        "pageid": 1166376,
+        "ns": 0,
+        "title": "BLISS"
+      },
+      {
+        "pageid": 2066745,
+        "ns": 0,
+        "title": "Boo (プログラミング言語)"
+      },
+      {
+        "pageid": 1503,
+        "ns": 0,
+        "title": "C Sharp"
+      },
+      {
+        "pageid": 138615,
+        "ns": 0,
+        "title": "C++ Builder"
+      },
+      {
+        "pageid": 561599,
+        "ns": 0,
+        "title": "C++/CLI"
+      },
+      {
+        "pageid": 1202160,
+        "ns": 0,
+        "title": "CAP-X"
+      },
+      {
+        "pageid": 658483,
+        "ns": 0,
+        "title": "CASL"
+      },
+      {
+        "pageid": 2496222,
+        "ns": 0,
+        "title": "Ceylon"
+      },
+      {
+        "pageid": 65784,
+        "ns": 0,
+        "title": "Cg (プログラミング言語)"
+      },
+      {
+        "pageid": 2615416,
+        "ns": 0,
+        "title": "Chapel"
+      },
+      {
+        "pageid": 1670,
+        "ns": 0,
+        "title": "CHILL"
+      },
+      {
+        "pageid": 1312181,
+        "ns": 0,
+        "title": "Clipper (プログラミング言語)"
+      },
+      {
+        "pageid": 442664,
+        "ns": 0,
+        "title": "CLIPS"
+      },
+      {
+        "pageid": 2084685,
+        "ns": 0,
+        "title": "Clojure"
+      },
+      {
+        "pageid": 906334,
+        "ns": 0,
+        "title": "CLU"
+      },
+      {
+        "pageid": 1864948,
+        "ns": 0,
+        "title": "CMU Common Lisp"
+      },
+      {
+        "pageid": 2059889,
+        "ns": 0,
+        "title": "Co-array Fortran"
+      },
+      {
+        "pageid": 1060176,
+        "ns": 0,
+        "title": "COBOL"
+      },
+      {
+        "pageid": 2630068,
+        "ns": 0,
+        "title": "COBOL/S"
+      },
+      {
+        "pageid": 1013849,
+        "ns": 0,
+        "title": "ColdFusion"
+      },
+      {
+        "pageid": 172200,
+        "ns": 0,
+        "title": "Common Lisp"
+      },
+      {
+        "pageid": 1992972,
+        "ns": 0,
+        "title": "Concurrent Prolog"
+      },
+      {
+        "pageid": 2003468,
+        "ns": 0,
+        "title": "Constraint Handling Rules"
+      },
+      {
+        "pageid": 2827761,
+        "ns": 0,
+        "title": "Coq"
+      },
+      {
+        "pageid": 767518,
+        "ns": 0,
+        "title": "CPL (プログラミング言語)"
+      },
+      {
+        "pageid": 1665781,
+        "ns": 0,
+        "title": "Cross System Product"
+      },
+      {
+        "pageid": 975432,
+        "ns": 0,
+        "title": "Csound"
+      },
+      {
+        "pageid": 859023,
+        "ns": 0,
+        "title": "Cω"
+      },
+      {
+        "pageid": 1022,
+        "ns": 0,
+        "title": "C言語"
+      },
+      {
+        "pageid": 1505,
+        "ns": 0,
+        "title": "C++"
+      },
+      {
+        "pageid": 31034,
+        "ns": 0,
+        "title": "D言語"
+      },
+      {
+        "pageid": 2800,
+        "ns": 0,
+        "title": "Delphi"
+      },
+      {
+        "pageid": 1174906,
+        "ns": 0,
+        "title": "DL/I"
+      },
+      {
+        "pageid": 2169077,
+        "ns": 0,
+        "title": "DRAKON"
+      },
+      {
+        "pageid": 615882,
+        "ns": 0,
+        "title": "Dylan"
+      },
+      {
+        "pageid": 3441,
+        "ns": 0,
+        "title": "ECMAScript"
+      },
+      {
+        "pageid": 1473,
+        "ns": 0,
+        "title": "Eiffel"
+      },
+      {
+        "pageid": 3030824,
+        "ns": 0,
+        "title": "Elixir (プログラミング言語)"
+      },
+      {
+        "pageid": 710207,
+        "ns": 0,
+        "title": "Erlang"
+      },
+      {
+        "pageid": 1133385,
+        "ns": 0,
+        "title": "Esterel"
+      },
+      {
+        "pageid": 2678299,
+        "ns": 0,
+        "title": "Etoys"
+      },
+      {
+        "pageid": 2050918,
+        "ns": 0,
+        "title": "Euphoria (プログラミング言語)"
+      },
+      {
+        "pageid": 976188,
+        "ns": 0,
+        "title": "F Sharp"
+      },
+      {
+        "pageid": 1341067,
+        "ns": 0,
+        "title": "Factor"
+      },
+      {
+        "pageid": 2086305,
+        "ns": 0,
+        "title": "Fantom (プログラミング言語)"
+      },
+      {
+        "pageid": 1401099,
+        "ns": 0,
+        "title": "Ficl"
+      },
+      {
+        "pageid": 1053,
+        "ns": 0,
+        "title": "Forth"
+      },
+      {
+        "pageid": 2036741,
+        "ns": 2,
+        "title": "利用者:Foxtrot/Forth"
+      },
+      {
+        "pageid": 1084,
+        "ns": 0,
+        "title": "FORTRAN"
+      },
+      {
+        "pageid": 2620136,
+        "ns": 0,
+        "title": "FORTRAN 77の言語仕様"
+      },
+      {
+        "pageid": 2620137,
+        "ns": 0,
+        "title": "Fortranの言語仕様"
+      },
+      {
+        "pageid": 2614731,
+        "ns": 0,
+        "title": "Fortress"
+      },
+      {
+        "pageid": 1356321,
+        "ns": 0,
+        "title": "FreeBASIC"
+      },
+      {
+        "pageid": 1060467,
+        "ns": 0,
+        "title": "GLSL"
+      },
+      {
+        "pageid": 840526,
+        "ns": 0,
+        "title": "GNU Octave"
+      },
+      {
+        "pageid": 1929374,
+        "ns": 0,
+        "title": "Go (プログラミング言語)"
+      },
+      {
+        "pageid": 132265,
+        "ns": 0,
+        "title": "Groovy"
+      },
+      {
+        "pageid": 1991282,
+        "ns": 0,
+        "title": "Guarded Horn Clauses"
+      },
+      {
+        "pageid": 2972042,
+        "ns": 0,
+        "title": "Hack (プログラミング言語)"
+      },
+      {
+        "pageid": 1141,
+        "ns": 0,
+        "title": "Haskell"
+      },
+      {
+        "pageid": 1264123,
+        "ns": 0,
+        "title": "High Level Shading Language"
+      },
+      {
+        "pageid": 2615965,
+        "ns": 0,
+        "title": "High Performance Fortran"
+      },
+      {
+        "pageid": 2051445,
+        "ns": 0,
+        "title": "HLASM"
+      },
+      {
+        "pageid": 130623,
+        "ns": 0,
+        "title": "Hot Soup Processor"
+      },
+      {
+        "pageid": 143343,
+        "ns": 0,
+        "title": "HyperTalk"
+      },
+      {
+        "pageid": 1960944,
+        "ns": 0,
+        "title": "IBM High Level Assembler"
+      },
+      {
+        "pageid": 231244,
+        "ns": 0,
+        "title": "Icon"
+      },
+      {
+        "pageid": 1464074,
+        "ns": 0,
+        "title": "Inform"
+      },
+      {
+        "pageid": 740457,
+        "ns": 0,
+        "title": "Information Processing Language"
+      },
+      {
+        "pageid": 1578626,
+        "ns": 0,
+        "title": "Interactive Data Language"
+      },
+      {
+        "pageid": 346191,
+        "ns": 0,
+        "title": "INTERCAL"
+      },
+      {
+        "pageid": 996767,
+        "ns": 0,
+        "title": "Io (プログラミング言語)"
+      },
+      {
+        "pageid": 1126575,
+        "ns": 0,
+        "title": "IronRuby"
+      },
+      {
+        "pageid": 1117428,
+        "ns": 0,
+        "title": "ISWIM"
+      },
+      {
+        "pageid": 624308,
+        "ns": 0,
+        "title": "J (プログラミング言語)"
+      },
+      {
+        "pageid": 1279,
+        "ns": 0,
+        "title": "Java"
+      },
+      {
+        "pageid": 1591282,
+        "ns": 0,
+        "title": "JMax"
+      },
+      {
+        "pageid": 689610,
+        "ns": 0,
+        "title": "JavaScript Object Notation"
+      },
+      {
+        "pageid": 885293,
+        "ns": 0,
+        "title": "KEMURI (プログラミング言語)"
+      },
+      {
+        "pageid": 1992188,
+        "ns": 0,
+        "title": "KL1"
+      },
+      {
+        "pageid": 2911425,
+        "ns": 0,
+        "title": "Kojo"
+      },
+      {
+        "pageid": 2563631,
+        "ns": 0,
+        "title": "Kotlin"
+      },
+      {
+        "pageid": 2489935,
+        "ns": 0,
+        "title": "KSプログラミング"
+      },
+      {
+        "pageid": 16546,
+        "ns": 0,
+        "title": "LabVIEW"
+      },
+      {
+        "pageid": 1336934,
+        "ns": 0,
+        "title": "Lazy K"
+      },
+      {
+        "pageid": 1588704,
+        "ns": 0,
+        "title": "Limbo"
+      },
+      {
+        "pageid": 1031778,
+        "ns": 0,
+        "title": "Linda"
+      },
+      {
+        "pageid": 1283319,
+        "ns": 0,
+        "title": "Linden Scripting Language"
+      },
+      {
+        "pageid": 5691,
+        "ns": 0,
+        "title": "LISP"
+      },
+      {
+        "pageid": 215262,
+        "ns": 0,
+        "title": "LOGO"
+      },
+      {
+        "pageid": 536635,
+        "ns": 0,
+        "title": "Lotus Script"
+      },
+      {
+        "pageid": 887056,
+        "ns": 0,
+        "title": "Lua"
+      },
+      {
+        "pageid": 1147673,
+        "ns": 0,
+        "title": "Lucid (プログラミング言語)"
+      },
+      {
+        "pageid": 1864961,
+        "ns": 0,
+        "title": "Lush (プログラム言語)"
+      },
+      {
+        "pageid": 2083527,
+        "ns": 0,
+        "title": "Mana (プログラミング言語)"
+      },
+      {
+        "pageid": 587388,
+        "ns": 0,
+        "title": "Mathematica"
+      },
+      {
+        "pageid": 217272,
+        "ns": 0,
+        "title": "MATLAB"
+      },
+      {
+        "pageid": 1142755,
+        "ns": 0,
+        "title": "Max (ソフトウェア)"
+      },
+      {
+        "pageid": 170550,
+        "ns": 0,
+        "title": "METAFONT"
+      },
+      {
+        "pageid": 1262946,
+        "ns": 0,
+        "title": "MHEG-5"
+      },
+      {
+        "pageid": 2688945,
+        "ns": 0,
+        "title": "MicroWorlds"
+      },
+      {
+        "pageid": 1024373,
+        "ns": 0,
+        "title": "Miranda"
+      },
+      {
+        "pageid": 3345918,
+        "ns": 2,
+        "title": "利用者:Mizick/sandbox"
+      },
+      {
+        "pageid": 1145,
+        "ns": 0,
+        "title": "ML (プログラミング言語)"
+      },
+      {
+        "pageid": 7660,
+        "ns": 0,
+        "title": "Modula-2"
+      },
+      {
+        "pageid": 50254,
+        "ns": 0,
+        "title": "Mops"
+      },
+      {
+        "pageid": 124265,
+        "ns": 0,
+        "title": "MUMPS"
+      },
+      {
+        "pageid": 2287024,
+        "ns": 0,
+        "title": "MUSIC-N"
+      },
+      {
+        "pageid": 763175,
+        "ns": 0,
+        "title": "Nemerle"
+      },
+      {
+        "pageid": 2677058,
+        "ns": 0,
+        "title": "NetLogo"
+      },
+      {
+        "pageid": 853359,
+        "ns": 0,
+        "title": "Netwide Assembler"
+      },
+      {
+        "pageid": 2098355,
+        "ns": 0,
+        "title": "Noop (プログラミング言語)"
+      },
+      {
+        "pageid": 1272425,
+        "ns": 0,
+        "title": "Oberon-2"
+      },
+      {
+        "pageid": 1716815,
+        "ns": 0,
+        "title": "Object REXX"
+      },
+      {
+        "pageid": 1229,
+        "ns": 0,
+        "title": "Objective-C"
+      },
+      {
+        "pageid": 1472,
+        "ns": 0,
+        "title": "OCaml"
+      },
+      {
+        "pageid": 343686,
+        "ns": 0,
+        "title": "Occam"
+      },
+      {
+        "pageid": 2051459,
+        "ns": 0,
+        "title": "Octave (プログラミング言語)"
+      },
+      {
+        "pageid": 1138226,
+        "ns": 0,
+        "title": "Ook!"
+      },
+      {
+        "pageid": 2461165,
+        "ns": 0,
+        "title": "OpenMusic"
+      },
+      {
+        "pageid": 996859,
+        "ns": 0,
+        "title": "Oz (プログラミング言語)"
+      },
+      {
+        "pageid": 2051812,
+        "ns": 0,
+        "title": "PAL-III"
+      },
+      {
+        "pageid": 1990491,
+        "ns": 0,
+        "title": "PARLOG"
+      },
+      {
+        "pageid": 632659,
+        "ns": 0,
+        "title": "Parrot"
+      },
+      {
+        "pageid": 1668979,
+        "ns": 0,
+        "title": "Component Pascal"
+      },
+      {
+        "pageid": 2772,
+        "ns": 0,
+        "title": "Pascal"
+      },
+      {
+        "pageid": 1716033,
+        "ns": 0,
+        "title": "PBASIC"
+      },
+      {
+        "pageid": 1063,
+        "ns": 0,
+        "title": "Perl"
+      },
+      {
+        "pageid": 2260181,
+        "ns": 0,
+        "title": "Perl 6"
+      },
+      {
+        "pageid": 949716,
+        "ns": 0,
+        "title": "PerlScript"
+      },
+      {
+        "pageid": 2450618,
+        "ns": 0,
+        "title": "Phalanger"
+      },
+      {
+        "pageid": 3558,
+        "ns": 0,
+        "title": "PHP: Hypertext Preprocessor"
+      },
+      {
+        "pageid": 1846791,
+        "ns": 0,
+        "title": "Pic言語"
+      },
+      {
+        "pageid": 1769256,
+        "ns": 0,
+        "title": "Piet"
+      },
+      {
+        "pageid": 774504,
+        "ns": 0,
+        "title": "PL/0"
+      },
+      {
+        "pageid": 2927,
+        "ns": 0,
+        "title": "PL/I"
+      },
+      {
+        "pageid": 125107,
+        "ns": 0,
+        "title": "PL/SQL"
+      },
+      {
+        "pageid": 717356,
+        "ns": 0,
+        "title": "Planner"
+      },
+      {
+        "pageid": 1152,
+        "ns": 0,
+        "title": "PostScript"
+      },
+      {
+        "pageid": 1858289,
+        "ns": 0,
+        "title": "PowerShell"
+      },
+      {
+        "pageid": 1204491,
+        "ns": 0,
+        "title": "Processing"
+      },
+      {
+        "pageid": 2009310,
+        "ns": 0,
+        "title": "Program Composition Notation"
+      },
+      {
+        "pageid": 1475,
+        "ns": 0,
+        "title": "Prolog"
+      },
+      {
+        "pageid": 1023392,
+        "ns": 0,
+        "title": "Pure Data"
+      },
+      {
+        "pageid": 993,
+        "ns": 0,
+        "title": "Python"
+      },
+      {
+        "pageid": 2745467,
+        "ns": 0,
+        "title": "Quartz Composer"
+      },
+      {
+        "pageid": 576394,
+        "ns": 0,
+        "title": "QuickBASIC"
+      },
+      {
+        "pageid": 171215,
+        "ns": 0,
+        "title": "Ratfor"
+      },
+      {
+        "pageid": 1347393,
+        "ns": 0,
+        "title": "REBOL"
+      },
+      {
+        "pageid": 2665530,
+        "ns": 0,
+        "title": "Refal"
+      },
+      {
+        "pageid": 316732,
+        "ns": 0,
+        "title": "REXX"
+      },
+      {
+        "pageid": 626539,
+        "ns": 0,
+        "title": "RPG (プログラム言語)"
+      },
+      {
+        "pageid": 1024,
+        "ns": 0,
+        "title": "Ruby"
+      },
+      {
+        "pageid": 2609267,
+        "ns": 0,
+        "title": "Rust (プログラミング言語)"
+      },
+      {
+        "pageid": 286775,
+        "ns": 0,
+        "title": "R言語"
+      },
+      {
+        "pageid": 1324798,
+        "ns": 0,
+        "title": "Scala"
+      },
+      {
+        "pageid": 1127,
+        "ns": 0,
+        "title": "Scheme"
+      },
+      {
+        "pageid": 153633,
+        "ns": 0,
+        "title": "Scilab"
+      },
+      {
+        "pageid": 2688422,
+        "ns": 0,
+        "title": "Scratch (プログラミング言語)"
+      },
+      {
+        "pageid": 905339,
+        "ns": 0,
+        "title": "Self"
+      },
+      {
+        "pageid": 722760,
+        "ns": 0,
+        "title": "Shakespeare (プログラミング言語)"
+      },
+      {
+        "pageid": 2016348,
+        "ns": 0,
+        "title": "Short Code (プログラミング言語)"
+      },
+      {
+        "pageid": 1506,
+        "ns": 0,
+        "title": "Simula"
+      },
+      {
+        "pageid": 1307575,
+        "ns": 0,
+        "title": "Simulink"
+      },
+      {
+        "pageid": 2098354,
+        "ns": 0,
+        "title": "SKILL (プログラミング言語)"
+      },
+      {
+        "pageid": 2412068,
+        "ns": 0,
+        "title": "Small Basic"
+      },
+      {
+        "pageid": 1637,
+        "ns": 0,
+        "title": "Smalltalk"
+      },
+      {
+        "pageid": 231245,
+        "ns": 0,
+        "title": "SNOBOL"
+      },
+      {
+        "pageid": 9642,
+        "ns": 0,
+        "title": "SQL"
+      },
+      {
+        "pageid": 7449,
+        "ns": 0,
+        "title": "Squeak"
+      },
+      {
+        "pageid": 1659308,
+        "ns": 0,
+        "title": "Squirrel"
+      },
+      {
+        "pageid": 1570242,
+        "ns": 0,
+        "title": "Standard ML"
+      },
+      {
+        "pageid": 2676564,
+        "ns": 0,
+        "title": "StarLogo"
+      },
+      {
+        "pageid": 1987867,
+        "ns": 0,
+        "title": "Strand"
+      },
+      {
+        "pageid": 809463,
+        "ns": 0,
+        "title": "SuperCollider"
+      },
+      {
+        "pageid": 3000778,
+        "ns": 0,
+        "title": "Swift (プログラミング言語)"
+      },
+      {
+        "pageid": 783719,
+        "ns": 0,
+        "title": "S言語"
+      },
+      {
+        "pageid": 359583,
+        "ns": 0,
+        "title": "Tcl"
+      },
+      {
+        "pageid": 348347,
+        "ns": 0,
+        "title": "Tcl/Tk"
+      },
+      {
+        "pageid": 315809,
+        "ns": 0,
+        "title": "Tenems"
+      },
+      {
+        "pageid": 914088,
+        "ns": 0,
+        "title": "TestNG"
+      },
+      {
+        "pageid": 951172,
+        "ns": 0,
+        "title": "Text Editor and Corrector"
+      },
+      {
+        "pageid": 134868,
+        "ns": 0,
+        "title": "TL/I"
+      },
+      {
+        "pageid": 546384,
+        "ns": 0,
+        "title": "Tonyu System"
+      },
+      {
+        "pageid": 902124,
+        "ns": 0,
+        "title": "TTCN"
+      },
+      {
+        "pageid": 732366,
+        "ns": 0,
+        "title": "Turing"
+      },
+      {
+        "pageid": 2615031,
+        "ns": 0,
+        "title": "Unified Parallel C"
+      },
+      {
+        "pageid": 1431530,
+        "ns": 0,
+        "title": "Universal Network Objects"
+      },
+      {
+        "pageid": 2098353,
+        "ns": 0,
+        "title": "Unlambda"
+      },
+      {
+        "pageid": 3293933,
+        "ns": 0,
+        "title": "Uppaal"
+      },
+      {
+        "pageid": 2531577,
+        "ns": 0,
+        "title": "UWSC"
+      },
+      {
+        "pageid": 60112,
+        "ns": 0,
+        "title": "Microsoft Visual Basic"
+      },
+      {
+        "pageid": 323084,
+        "ns": 0,
+        "title": "Microsoft Visual Basic .NET"
+      },
+      {
+        "pageid": 84656,
+        "ns": 0,
+        "title": "Visual Basic for Applications"
+      },
+      {
+        "pageid": 427934,
+        "ns": 0,
+        "title": "Whitespace"
+      },
+      {
+        "pageid": 148524,
+        "ns": 0,
+        "title": "WICS"
+      },
+      {
+        "pageid": 1025836,
+        "ns": 0,
+        "title": "Windows PowerShell"
+      },
+      {
+        "pageid": 1379069,
+        "ns": 0,
+        "title": "Windows Script Host"
+      },
+      {
+        "pageid": 2910068,
+        "ns": 0,
+        "title": "Wolfram (プログラミング言語)"
+      },
+      {
+        "pageid": 2000754,
+        "ns": 0,
+        "title": "X10 (プログラミング言語)"
+      },
+      {
+        "pageid": 1588720,
+        "ns": 0,
+        "title": "XBase"
+      },
+      {
+        "pageid": 3095467,
+        "ns": 0,
+        "title": "XcalableACC"
+      },
+      {
+        "pageid": 3095458,
+        "ns": 0,
+        "title": "XcalableMP"
+      },
+      {
+        "pageid": 557710,
+        "ns": 0,
+        "title": "XQuery"
+      },
+      {
+        "pageid": 3130,
+        "ns": 0,
+        "title": "アセンブリ言語"
+      },
+      {
+        "pageid": 2815235,
+        "ns": 0,
+        "title": "Expression problem"
+      },
+      {
+        "pageid": 30060,
+        "ns": 0,
+        "title": "オブジェクト指向プログラミング"
+      },
+      {
+        "pageid": 935210,
+        "ns": 0,
+        "title": "オリジン"
+      },
+      {
+        "pageid": 1140,
+        "ns": 0,
+        "title": "関数型言語"
+      },
+      {
+        "pageid": 1622,
+        "ns": 0,
+        "title": "機械語"
+      },
+      {
+        "pageid": 2056307,
+        "ns": 0,
+        "title": "擬似言語"
+      },
+      {
+        "pageid": 1161,
+        "ns": 0,
+        "title": "Clean"
+      },
+      {
+        "pageid": 178960,
+        "ns": 0,
+        "title": "グルー言語"
+      },
+      {
+        "pageid": 403110,
+        "ns": 0,
+        "title": "軽量プログラミング言語"
+      },
+      {
+        "pageid": 1407924,
+        "ns": 0,
+        "title": "言語プロセッサ"
+      },
+      {
+        "pageid": 3185088,
+        "ns": 0,
+        "title": "高級言語計算機"
+      },
+      {
+        "pageid": 3114,
+        "ns": 0,
+        "title": "高水準言語"
+      },
+      {
+        "pageid": 385855,
+        "ns": 0,
+        "title": "シーケンシャル・ファンクション・チャート"
+      },
+      {
+        "pageid": 1275515,
+        "ns": 0,
+        "title": "シェーディング言語"
+      },
+      {
+        "pageid": 2651,
+        "ns": 0,
+        "title": "スクリプト言語"
+      },
+      {
+        "pageid": 1397192,
+        "ns": 0,
+        "title": "ストラクチャード・テキスト"
+      },
+      {
+        "pageid": 247041,
+        "ns": 0,
+        "title": "チューリング完全"
+      },
+      {
+        "pageid": 3126,
+        "ns": 0,
+        "title": "低水準言語"
+      },
+      {
+        "pageid": 1463251,
+        "ns": 0,
+        "title": "データフロープログラミング"
+      },
+      {
+        "pageid": 850961,
+        "ns": 0,
+        "title": "ドメイン固有言語"
+      },
+      {
+        "pageid": 844178,
+        "ns": 0,
+        "title": "ドメイン固有モデリング"
+      },
+      {
+        "pageid": 446002,
+        "ns": 0,
+        "title": "ドリトル (プログラミング言語)"
+      },
+      {
+        "pageid": 192861,
+        "ns": 0,
+        "title": "なでしこ (プログラミング言語)"
+      },
+      {
+        "pageid": 1453752,
+        "ns": 0,
+        "title": "難解プログラミング言語"
+      },
+      {
+        "pageid": 2656789,
+        "ns": 0,
+        "title": "日本語プログラミング言語"
+      },
+      {
+        "pageid": 2703880,
+        "ns": 0,
+        "title": "汎用プログラミング言語"
+      },
+      {
+        "pageid": 1207795,
+        "ns": 0,
+        "title": "ビジュアルプログラミング言語"
+      },
+      {
+        "pageid": 139697,
+        "ns": 0,
+        "title": "非手続き型言語"
+      },
+      {
+        "pageid": 44161,
+        "ns": 0,
+        "title": "ひまわり (プログラミング言語)"
+      },
+      {
+        "pageid": 1387341,
+        "ns": 0,
+        "title": "評価戦略"
+      },
+      {
+        "pageid": 386512,
+        "ns": 0,
+        "title": "ファンクション・ブロック・ダイアグラム"
+      },
+      {
+        "pageid": 1606947,
+        "ns": 0,
+        "title": "プランカルキュール"
+      },
+      {
+        "pageid": 920061,
+        "ns": 10,
+        "title": "Template:プログラミング言語"
+      },
+      {
+        "pageid": 791435,
+        "ns": 0,
+        "title": "並行計算"
+      },
+      {
+        "pageid": 918565,
+        "ns": 0,
+        "title": "並行プログラミング言語"
+      },
+      {
+        "pageid": 417746,
+        "ns": 0,
+        "title": "ページ記述言語"
+      },
+      {
+        "pageid": 391482,
+        "ns": 0,
+        "title": "方言 (プログラミング言語)"
+      },
+      {
+        "pageid": 1154,
+        "ns": 0,
+        "title": "Mind (プログラミング言語)"
+      },
+      {
+        "pageid": 816333,
+        "ns": 0,
+        "title": "命令型プログラミング"
+      },
+      {
+        "pageid": 1152295,
+        "ns": 0,
+        "title": "メモ化"
+      },
+      {
+        "pageid": 403334,
+        "ns": 0,
+        "title": "萌え言語"
+      },
+      {
+        "pageid": 384425,
+        "ns": 0,
+        "title": "ラダー・ロジック"
+      },
+      {
+        "pageid": 3363512,
+        "ns": 0,
+        "title": "量子プログラミング言語"
+      },
+      {
+        "pageid": 3115463,
+        "ns": 0,
+        "title": "Wyvern (プログラミング言語)"
+      },
+      {
+        "pageid": 721779,
+        "ns": 14,
+        "title": "Category:BASIC"
+      },
+      {
+        "pageid": 723327,
+        "ns": 14,
+        "title": "Category:C言語"
+      },
+      {
+        "pageid": 687046,
+        "ns": 14,
+        "title": "Category:C++"
+      },
+      {
+        "pageid": 1309383,
+        "ns": 14,
+        "title": "Category:Java"
+      },
+      {
+        "pageid": 721574,
+        "ns": 14,
+        "title": "Category:LISP"
+      },
+      {
+        "pageid": 721509,
+        "ns": 14,
+        "title": "Category:Pascal"
+      },
+      {
+        "pageid": 949683,
+        "ns": 14,
+        "title": "Category:Perl"
+      },
+      {
+        "pageid": 687067,
+        "ns": 14,
+        "title": "Category:PHP"
+      },
+      {
+        "pageid": 723402,
+        "ns": 14,
+        "title": "Category:PostScript"
+      },
+      {
+        "pageid": 1380861,
+        "ns": 14,
+        "title": "Category:Python"
+      },
+      {
+        "pageid": 816863,
+        "ns": 14,
+        "title": "Category:Ruby"
+      },
+      {
+        "pageid": 1855837,
+        "ns": 14,
+        "title": "Category:アセンブリ言語"
+      },
+      {
+        "pageid": 721482,
+        "ns": 14,
+        "title": "Category:オブジェクト指向言語"
+      },
+      {
+        "pageid": 316706,
+        "ns": 14,
+        "title": "Category:関数型言語"
+      },
+      {
+        "pageid": 626330,
+        "ns": 14,
+        "title": "Category:コンパイラ"
+      },
+      {
+        "pageid": 536476,
+        "ns": 14,
+        "title": "Category:数値解析ソフトウェア"
+      },
+      {
+        "pageid": 721489,
+        "ns": 14,
+        "title": "Category:スクリプト言語"
+      },
+      {
+        "pageid": 924256,
+        "ns": 14,
+        "title": "Category:プログラミング言語別ソフトウェア"
+      },
+      {
+        "pageid": 1453270,
+        "ns": 14,
+        "title": "Category:難解プログラミング言語"
+      },
+      {
+        "pageid": 2664756,
+        "ns": 14,
+        "title": "Category:日本語プログラミング言語"
+      },
+      {
+        "pageid": 1070543,
+        "ns": 14,
+        "title": "Category:プログラミング言語設計者"
+      },
+      {
+        "pageid": 188658,
+        "ns": 14,
+        "title": "Category:プログラミング言語の構文"
+      },
+      {
+        "pageid": 2438090,
+        "ns": 14,
+        "title": "Category:マイクロソフトのプログラミング言語"
+      }
+    ]
+  }
+}

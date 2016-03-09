@@ -13,8 +13,8 @@ protocol UnconfirmedLanguageViewModelType {
     var color:          UIColor { get }
     var shape:          UIBezierPath { get }
 
-    var caughtSignal:   Signal<(), NoError> { get }
-    var caughtObsevrer: Observer<(), NoError> { get }
+    var caughtObsevrer:       Observer<(), NoError> { get }
+    var caughtLanguageSignal: Signal<LanguageType, NoError> { get }
 
     func positionOnArea(area: CGSize) -> CGPoint
 }

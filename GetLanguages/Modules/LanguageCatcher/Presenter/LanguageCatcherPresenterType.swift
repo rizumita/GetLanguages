@@ -5,11 +5,11 @@
 
 import Foundation
 import ReactiveCocoa
+import Result
 
 protocol LanguageCatcherPresenterType {
-
-    var languageViewModelProperty: AnyProperty<UnconfirmedLanguageViewModel?> { get }
+    var languageViewModelSignal: Signal<UnconfirmedLanguageViewModelType, NoError> { get }
+    var preparedProperty: AnyProperty<Bool> { get }
 
     func bringLanguages()
-    
 }

@@ -4,19 +4,41 @@
 //
 
 import Foundation
+import RealmSwift
+import Himotoki
 
-struct ProgrammingLanguage: LanguageType {
+class ProgrammingLanguage: Object, Decodable, LanguageType {
 
-    let id: String
+    dynamic private(set) var id: Int = 0
 
-    let name: String
+    dynamic private(set) var name: String = ""
 
-    let description: String
+    dynamic private(set) var content: String = ""
 
-    init(id: String, name: String, description: String) {
-        self.id = id
-        self.name = name
-        self.description = description
+    override class func primaryKey() -> String? {
+        return "id"
     }
 
+    class func decode(e: Extractor) throws -> ProgrammingLanguage {
+        let realm = try Realm()
+        let id: Int = try e <| "pageid"
+        if let item = realm.objectForPrimaryKey(ProgrammingLanguage.self, key: id) {
+            return item
+        } else {
+            realm.beginWrite()
+            let item = ProgrammingLanguage()
+            item.id = id
+            item.name = try e <| "title"
+            realm.add(item)
+            try realm.commitWrite()
+            return item
+        }
+    }
+
+    convenience init(id: Int, name: String, content: String) {
+        self.init()
+        self.id = id
+        self.name = name
+        self.content = content
+    }
 }

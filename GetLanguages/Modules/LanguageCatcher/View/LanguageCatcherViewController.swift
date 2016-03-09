@@ -8,28 +8,33 @@
 
 import UIKit
 import ReactiveCocoa
+import Result
+import Rex
 
 class LanguageCatcherViewController: UIViewController {
 
-    let maxLanguageNumber = 5
-    
+    var maxLanguageNumber: Int = 10
+
     @IBOutlet weak var fieldView: FieldView!
-    
+
     var presenter: LanguageCatcherPresenterType!
 
-    let disposable = CompositeDisposable()
+    private let needsLanguageSignalAndObserver: (Signal<(), NoError>, Observer<(), NoError>) = Signal.pipe()
+    private let disposable                                                                   = CompositeDisposable()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        disposable += presenter.languageViewModelProperty.producer.ignoreNil().observeOn(UIScheduler()).startWithNext(bringLanguageView)
-    }
-
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-
-        for _ in 0..<(maxLanguageNumber - fieldView.subviews.count) {
-            presenter.bringLanguages()
+        let skipWhile = {
+            [unowned self] in self.presenter.preparedProperty.value == false
+        }
+        disposable += needsLanguageSignalAndObserver.0.skipWhile(skipWhile).observeNext(presenter.bringLanguages)
+        disposable += presenter.languageViewModelSignal.observeOn(UIScheduler()).observeNext(bringLanguageView)
+        disposable += QueueScheduler().scheduleAfter(NSDate(), repeatingEvery: 3.0) {
+            [unowned self] in
+            if self.fieldView.subviews.count < self.maxLanguageNumber {
+                self.needsLanguageSignalAndObserver.1.sendNext()
+            }
         }
     }
 
@@ -38,7 +43,7 @@ class LanguageCatcherViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func bringLanguageView(viewModel: UnconfirmedLanguageViewModel) {
+    func bringLanguageView(viewModel: UnconfirmedLanguageViewModelType) {
         let languageView = UnconfirmedLanguageView(viewModel: viewModel)
         languageView.emergeOnField(fieldView)
         languageView.move()

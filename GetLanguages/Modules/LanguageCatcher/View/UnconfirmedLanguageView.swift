@@ -13,14 +13,15 @@ class UnconfirmedLanguageView: UIView {
         return layer.presentationLayer()?.frame ?? layer.frame
     }
 
-    private let viewModel:     UnconfirmedLanguageViewModelType
-    private let tapGestureRecognizer = UITapGestureRecognizer()
-
     private typealias Action = () -> ()
+
+    private let viewModel:     UnconfirmedLanguageViewModelType
+    private var fieldView:     UIView?
     private var nextAction:    Action?
     private var nextRotationX: Action?
     private var nextRotationY: Action?
     private var nextRotationZ: Action?
+    private let tapGestureRecognizer = UITapGestureRecognizer()
 
     private let disposable = CompositeDisposable()
 
@@ -63,10 +64,11 @@ class UnconfirmedLanguageView: UIView {
     }
 
     func emergeOnField(fieldView: FieldView) {
+        self.fieldView = fieldView
         fieldView.addSubview(self)
 
         layer.position = viewModel.positionOnArea(fieldView.frame.size)
-        nextAction = runActionInArea(fieldView.frame.size)
+        nextAction = runActionInArea()
         nextRotationX = rotationActionWithKeyPath("transform.rotation.x", key: .RotationX, baseDegree: 180.0)
         nextRotationY = rotationActionWithKeyPath("transform.rotation.y", key: .RotationY, baseDegree: 180.0)
         nextRotationZ = rotationActionWithKeyPath("transform.rotation.z", key: .RotationZ, baseDegree: 360.0)
@@ -86,10 +88,10 @@ class UnconfirmedLanguageView: UIView {
         case RotationZ
     }
 
-    private func runActionInArea(area: CGSize) -> Action {
+    private func runActionInArea() -> Action {
         return {
             [unowned self] in
-            let destination = self.viewModel.positionOnArea(area)
+            let destination = self.viewModel.positionOnArea(self.fieldView?.frame.size ?? CGSizeZero)
             let duration    = self.viewModel.actionDuration
 
             let anim = CABasicAnimation(keyPath: "position")

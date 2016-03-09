@@ -2,3 +2,7 @@ github "ReactiveCocoa/ReactiveCocoa"
 github "typelift/Swiftz"
 github "Swinject/Swinject"
 github "rizumita/TransitionOperator"
+github "neilpa/Rex"
+github "ishkawa/APIKit" ~> 1.1.2
+github "ikesyo/Himotoki" ~> 1.6
+github "realm/realm-cocoa"

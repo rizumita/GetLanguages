@@ -5,23 +5,32 @@
 
 import Foundation
 import ReactiveCocoa
+import Rex
+import Result
 
-class LanguageCatcherPresenter: LanguageCatcherPresenterType {
+struct LanguageCatcherPresenter: LanguageCatcherPresenterType {
 
-    let languageViewModelProperty: AnyProperty<UnconfirmedLanguageViewModel?>
-    private let _languageViewModelProperty = MutableProperty<UnconfirmedLanguageViewModel?>(nil)
+    let languageViewModelSignal: Signal<UnconfirmedLanguageViewModelType, NoError>
+    let preparedProperty: AnyProperty<Bool>
 
-    init() {
-        languageViewModelProperty = AnyProperty(initialValue: nil, producer: _languageViewModelProperty.producer)
+    private let interactor: LanguageCatcherInteractorType
+    private let translator: Translator<LanguageType, UnconfirmedLanguageViewModelType>
+
+    init(interactor: LanguageCatcherInteractorType, translator: Translator<LanguageType, UnconfirmedLanguageViewModelType>) {
+        self.interactor = interactor
+        self.translator = translator
+
+        preparedProperty = AnyProperty(initialValue: false, producer: interactor.preparedProperty.producer)
+
+        languageViewModelSignal = self.interactor.fetchedLanguageSignal.map(translator.translate).on { (viewModel: UnconfirmedLanguageViewModelType) in
+            viewModel.caughtLanguageSignal.observeNext { id in
+                print(id)
+            }
+        }
     }
 
     func bringLanguages() {
-        let language = ProgrammingLanguage(id: NSUUID().UUIDString,
-                                           name: "Test language",
-                                           description: "Test description")
-        _languageViewModelProperty.value = UnconfirmedLanguageViewModel(language: language,
-                                                                        positionMaker: RandomPositionMaker(),
-                                                                        colorMaker: RandomColorMaker())
+        interactor.fetchLanguage()
     }
 
 }
