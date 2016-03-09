@@ -12,7 +12,7 @@ import Swiftz
 struct LanguageCatcherPresenter: LanguageCatcherPresenterType {
 
     let languageViewModelSignal: Signal<UnconfirmedLanguageViewModelType, NoError>
-    let preparedProperty: AnyProperty<Bool>
+    let preparedProperty:        AnyProperty<Bool>
 
     private let interactor: LanguageCatcherInteractorType
     private let translator: Translator<LanguageType, UnconfirmedLanguageViewModelType>
@@ -26,8 +26,11 @@ struct LanguageCatcherPresenter: LanguageCatcherPresenterType {
         preparedProperty = AnyProperty(initialValue: false, producer: interactor.preparedProperty.producer)
 
         let addObserver = basket.addObserver
-        languageViewModelSignal = self.interactor.fetchedLanguageSignal.map(translator.translate).on { (viewModel: UnconfirmedLanguageViewModelType) in
-            viewModel.caughtLanguageSignal.observe(addObserver)
+        languageViewModelSignal = self.interactor.fetchedLanguageSignal.map(translator.translate).on {
+            (viewModel: UnconfirmedLanguageViewModelType) in
+            viewModel.caughtLanguageSignal.observeNext {
+                addObserver.sendNext($0)
+            }
         }
     }
 
