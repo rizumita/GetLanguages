@@ -5,7 +5,11 @@ import Foundation
 import Rswift
 import UIKit
 
-struct R {
+struct R: Rswift.Validatable {
+  static func validate() throws {
+    try intern.validate()
+  }
+  
   struct file {
     static let propertiesJson = FileResource(bundle: _R.hostingBundle, name: "properties", pathExtension: "json")
     
@@ -26,6 +30,12 @@ struct R {
   
   struct image {
     
+  }
+  
+  private struct intern: Rswift.Validatable {
+    static func validate() throws {
+      try _R.validate()
+    }
   }
   
   struct nib {
@@ -54,14 +64,22 @@ struct R {
   }
 }
 
-struct _R {
+struct _R: Rswift.Validatable {
   static let hostingBundle = NSBundle(identifier: "jp.caph.GetLanguages")
+  
+  static func validate() throws {
+    try storyboard.validate()
+  }
   
   struct nib {
     
   }
   
-  struct storyboard {
+  struct storyboard: Rswift.Validatable {
+    static func validate() throws {
+      try main.validate()
+    }
+    
     struct launchScreen: StoryboardResourceWithInitialControllerType {
       typealias InitialController = UIViewController
       
@@ -69,11 +87,19 @@ struct _R {
       let name = "LaunchScreen"
     }
     
-    struct main: StoryboardResourceWithInitialControllerType {
-      typealias InitialController = LanguageCatcherViewController
+    struct main: StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = UINavigationController
       
       let bundle = _R.hostingBundle
       let name = "Main"
+      
+      func languageCatcherViewController() -> LanguageCatcherViewController? {
+        return UIStoryboard(resource: self).instantiateViewControllerWithIdentifier("LanguageCatcherViewController") as? LanguageCatcherViewController
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.main().languageCatcherViewController() == nil { throw ValidationError(description:"[R.swift] ViewController with identifier 'languageCatcherViewController' could not be loaded from storyboard 'Main' as 'LanguageCatcherViewController'.") }
+      }
     }
   }
 }

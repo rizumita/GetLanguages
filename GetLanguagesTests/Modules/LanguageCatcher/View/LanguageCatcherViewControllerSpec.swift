@@ -10,7 +10,7 @@ class LanguageCatcherViewControllerSpec: QuickSpec {
         describe("LanguageCatcherViewController") {
             context("when presenter doesn’t prepare data yet") {
                 it("has no language view") {
-                    let controller = R.storyboard.main.initialViewController()!
+                    let controller = R.storyboard.main.languageCatcherViewController()!
                     controller.presenter = TestingLanguageCatcherPresenter()
                     _ = controller.view
                     NSRunLoop.currentRunLoop().runUntilDate(NSDate(timeInterval: 4.0, sinceDate: NSDate()))
@@ -20,7 +20,7 @@ class LanguageCatcherViewControllerSpec: QuickSpec {
 
             context("when presenter prepared data") {
                 it("has some language view") {
-                    let controller = R.storyboard.main.initialViewController()!
+                    let controller = R.storyboard.main.languageCatcherViewController()!
                     let presenter  = TestingLanguageCatcherPresenter()
                     controller.presenter = presenter
                     _ = controller.view
