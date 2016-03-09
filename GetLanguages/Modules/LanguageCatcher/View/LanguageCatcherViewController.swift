@@ -28,7 +28,7 @@ class LanguageCatcherViewController: UIViewController {
         let skipWhile = {
             [unowned self] in self.presenter.preparedProperty.value == false
         }
-        disposable += needsLanguageSignalAndObserver.0.skipWhile(skipWhile).observeNext(presenter.bringLanguages)
+        disposable += needsLanguageSignalAndObserver.0.skipWhile(skipWhile).observeNext(presenter.bringLanguage)
         disposable += presenter.languageViewModelSignal.observeOn(UIScheduler()).observeNext(bringLanguageView)
         disposable += QueueScheduler().scheduleAfter(NSDate(), repeatingEvery: 3.0) {
             [unowned self] in

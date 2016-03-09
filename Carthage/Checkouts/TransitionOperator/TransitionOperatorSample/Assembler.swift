@@ -16,7 +16,7 @@ class Assembly: AssemblyType {
     
     func assemble(container: Container) {
         container.register(WireframeType.self) { r in
-            return Wireframe()
+            return LanguageCatcherWireframe()
         }.inObjectScope(.Container)
         
         container.register(TransitionOperatorType.self, name: "DestinationSegue") {

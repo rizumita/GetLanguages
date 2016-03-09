@@ -3,6 +3,7 @@
 
 import Foundation
 import Rswift
+import TransitionOperator
 import UIKit
 
 struct R: Rswift.Validatable {
@@ -47,12 +48,23 @@ struct R: Rswift.Validatable {
   }
   
   struct segue {
-    
+    struct languageCatcherViewController {
+      static let caughtLanguageListSegue: StoryboardSegueIdentifier<TransitionExecutorSegue, LanguageCatcherViewController, UITableViewController> = StoryboardSegueIdentifier(identifier: "CaughtLanguageListSegue")
+      
+      static func caughtLanguageListSegue(segue segue: UIStoryboardSegue) -> TypedStoryboardSegueInfo<TransitionExecutorSegue, LanguageCatcherViewController, UITableViewController>? {
+        return TypedStoryboardSegueInfo(segueIdentifier: R.segue.languageCatcherViewController.caughtLanguageListSegue, segue: segue)
+      }
+    }
   }
   
   struct storyboard {
+    static let caughtLanguageList = _R.storyboard.caughtLanguageList()
     static let launchScreen = _R.storyboard.launchScreen()
     static let main = _R.storyboard.main()
+    
+    static func caughtLanguageList(_: Void) -> UIStoryboard {
+      return UIStoryboard(resource: R.storyboard.caughtLanguageList)
+    }
     
     static func launchScreen(_: Void) -> UIStoryboard {
       return UIStoryboard(resource: R.storyboard.launchScreen)
@@ -78,6 +90,13 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       try main.validate()
+    }
+    
+    struct caughtLanguageList: StoryboardResourceWithInitialControllerType {
+      typealias InitialController = UITableViewController
+      
+      let bundle = _R.hostingBundle
+      let name = "CaughtLanguageList"
     }
     
     struct launchScreen: StoryboardResourceWithInitialControllerType {

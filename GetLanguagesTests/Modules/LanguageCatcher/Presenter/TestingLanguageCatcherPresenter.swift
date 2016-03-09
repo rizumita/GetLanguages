@@ -13,13 +13,14 @@ class TestingLanguageCatcherPresenter: LanguageCatcherPresenterType {
     let languageViewModelObserver: Observer<UnconfirmedLanguageViewModelType, NoError>
     var preparedProperty:          AnyProperty<Bool>
     var _preparedProperty = MutableProperty(false)
+    let basket = Basket()
 
     init() {
         (languageViewModelSignal, languageViewModelObserver) = Signal.pipe()
         preparedProperty = AnyProperty(initialValue: false, producer: _preparedProperty.producer)
     }
 
-    func bringLanguages() {
+    func bringLanguage() {
         guard preparedProperty.value == true else {
             return
         }

@@ -5,11 +5,20 @@
 
 import Foundation
 import Swinject
+import TransitionOperator
 
 class LanguageCatcherAssembly: AssemblyType {
 
     func assemble(container: Container) {
         try! container.applyPropertyLoader(loader)
+
+        container.register(LanguageCatcherWireframe.self) {
+            r in
+            return LanguageCatcherWireframe(presenter: r.resolve(LanguageCatcherPresenterType.self)!)
+        }.initCompleted {
+            r, w in
+            w.caughtLanguageListWireframe = r.resolve(CaughtLanguageListWireframe.self)
+        }.inObjectScope(.Hierarchy)
 
         container.register(LanguageCatcherPresenterType.self) {
             r in
@@ -44,6 +53,18 @@ class LanguageCatcherAssembly: AssemblyType {
             r in
             return LanguageCatcherAPIDataManager()
         }
+
+        container.register(TransitionOperatorType.self, name: R.segue.languageCatcherViewController.caughtLanguageListSegue.identifier) {
+            r in
+            return TransitionOperator(LanguageCatcherTransition.caughtLanguageListOperation(TransitionExecutorSegue.self, r.resolve(LanguageCatcherWireframe.self)!, r.resolve(CaughtLanguageListWireframe.self)!))
+        }
+
+        TransitionExecutorSegue.transitionOperator = TransitionOperator {
+            (e: TransitionExecutorSegue, s: UIViewController, d: UIViewController) in
+            if e.transitionOperator == nil {
+                e.transitionOperator = assembler.resolver.resolve(TransitionOperatorType.self, name: e.identifier)
+            }
+        }
     }
 
 }
@@ -53,6 +74,7 @@ extension SwinjectStoryboard {
     class func setup() {
         defaultContainer.registerForStoryboard(LanguageCatcherViewController.self) {
             r, c in
+            assembler.resolver.resolve(LanguageCatcherWireframe.self)?.viewController = c
             c.presenter = assembler.resolver.resolve(LanguageCatcherPresenterType.self)
             c.maxLanguageNumber = assembler.resolver.property("star_number")!
         }

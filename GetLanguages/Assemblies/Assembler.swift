@@ -7,7 +7,8 @@ import Foundation
 import Swinject
 
 let assembler = try! Assembler(assemblies: [
-    LanguageCatcherAssembly(),
+        LanguageCatcherAssembly(),
+        CaughtLanguageListAssembly()
 ])
 
 let loader = JsonPropertyLoader(name: "properties")

@@ -28,7 +28,7 @@ class LanguageCatcherPresenterSpec: QuickSpec {
                 presenter.languageViewModelSignal.observeNext {
                     _ in result = true
                 }
-                presenter.bringLanguages()
+                presenter.bringLanguage()
                 expect(result) == true
             }
         }

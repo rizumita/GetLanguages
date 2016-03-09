@@ -47,7 +47,7 @@ class WireframeTests: XCTestCase {
             }
         }
 
-        let wireframe = Wireframe()
+        let wireframe = LanguageCatcherWireframe()
         let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as? UINavigationController
         let controller = navigationController?.viewControllers.first
         wireframe.viewController = controller

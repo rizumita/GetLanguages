@@ -45,7 +45,13 @@
                             <constraint firstAttribute="trailing" secondItem="wLw-XM-V2I" secondAttribute="trailing" id="j4h-U2-gTs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="dZB-ai-gO2"/>
+                    <navigationItem key="navigationItem" id="dZB-ai-gO2">
+                        <barButtonItem key="rightBarButtonItem" title="Languages" id="G6G-wZ-w2Y">
+                            <connections>
+                                <segue destination="eJf-FJ-V09" kind="show" identifier="CaughtLanguageListSegue" customClass="TransitionExecutorSegue" customModule="TransitionOperator" id="ER0-f9-Try"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="fieldView" destination="wLw-XM-V2I" id="Ypc-vf-hXa"/>
                     </connections>
@@ -53,6 +59,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="780" y="645"/>
+        </scene>
+        <!--CaughtLanguageList-->
+        <scene sceneID="x5Q-ec-7Ao">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CaughtLanguageList" id="eJf-FJ-V09" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TH4-4a-0VW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274" y="535"/>
         </scene>
     </scenes>
 </document>
