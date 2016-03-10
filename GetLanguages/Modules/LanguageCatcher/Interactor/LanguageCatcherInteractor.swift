@@ -27,6 +27,7 @@ class LanguageCatcherInteractor: LanguageCatcherInteractorType {
     private let translator:       Translator<LanguageType, LanguageType>
 
     private let disposable = CompositeDisposable()
+    private let scopedDisposable: ScopedDisposable
 
     init(localDataManager: LanguageCatcherLocalDataManagerType, APIDataManager: LanguageCatcherAPIDataManagerType, translator: Translator<LanguageType, LanguageType>) {
         self.localDataManager = localDataManager
@@ -47,6 +48,8 @@ class LanguageCatcherInteractor: LanguageCatcherInteractorType {
 
             self.APIDataManager.fetchData()
         }
+
+        scopedDisposable = ScopedDisposable(disposable)
     }
 
     func fetchLanguage() {

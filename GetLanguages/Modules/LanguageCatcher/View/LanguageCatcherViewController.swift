@@ -21,6 +21,7 @@ class LanguageCatcherViewController: UIViewController {
 
     private let needsLanguageSignalAndObserver: (Signal<(), NoError>, Observer<(), NoError>) = Signal.pipe()
     private let disposable                                                                   = CompositeDisposable()
+    private var scopedDisposable:               ScopedDisposable?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,26 +29,35 @@ class LanguageCatcherViewController: UIViewController {
         let skipWhile = {
             [unowned self] in self.presenter.preparedProperty.value == false
         }
-        disposable += needsLanguageSignalAndObserver.0.skipWhile(skipWhile).observeNext(presenter.bringLanguage)
-        disposable += presenter.languageViewModelSignal.observeOn(UIScheduler()).observeNext(bringLanguageView)
+        disposable += needsLanguageSignalAndObserver.0.skipWhile(skipWhile).observeNext {
+            [weak self] in self?.presenter.bringLanguage($0)
+        }
+        disposable += presenter.languageViewModelSignal.observeOn(UIScheduler()).observeNext {
+            [weak self] in self?.bringLanguageView($0)
+        }
         disposable += QueueScheduler().scheduleAfter(NSDate(), repeatingEvery: 3.0) {
             [unowned self] in
             if self.fieldView.subviews.count < self.maxLanguageNumber {
                 self.needsLanguageSignalAndObserver.1.sendNext()
             }
         }
+        scopedDisposable = ScopedDisposable(disposable)
     }
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
-        fieldView.languageViews.forEach { $0.move() }
+        fieldView.languageViews.forEach {
+            $0.move()
+        }
     }
 
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
 
-        fieldView.languageViews.forEach { $0.stop() }
+        fieldView.languageViews.forEach {
+            $0.stop()
+        }
     }
 
     override func didReceiveMemoryWarning() {

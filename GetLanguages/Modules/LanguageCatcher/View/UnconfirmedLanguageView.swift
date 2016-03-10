@@ -24,8 +24,10 @@ class UnconfirmedLanguageView: UIView {
     private let tapGestureRecognizer = UITapGestureRecognizer()
 
     private let disposable = CompositeDisposable()
+    private let scopedDisposable: ScopedDisposable
 
     init(viewModel: UnconfirmedLanguageViewModelType) {
+        scopedDisposable = ScopedDisposable(disposable)
         self.viewModel = viewModel
         let rect = CGRect(x: 0.0, y: 0.0, width: viewModel.size, height: viewModel.size)
 

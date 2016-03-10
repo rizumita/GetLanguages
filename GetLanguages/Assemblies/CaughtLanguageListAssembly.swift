@@ -5,6 +5,7 @@
 
 import Foundation
 import Swinject
+import TransitionOperator
 
 class CaughtLanguageListAssembly: AssemblyType {
 
@@ -19,11 +20,25 @@ class CaughtLanguageListAssembly: AssemblyType {
         container.register(CaughtLanguageListPresenterType.self) {
             r in
             return CaughtLanguageListPresenter()
-        }.inObjectScope(.Hierarchy)
+        }
 
-        container.registerForStoryboard(CaughtLanguageListViewController.self) {
+        container.register(TransitionOperatorType.self, name: R.segue.caughtLanguageListViewController.languageDetailSegue.identifier) {
+            r in
+            return TransitionOperator(CaughtLanguageListTransition.languageDetailOperation(TransitionExecutorSegue.self,
+                                                                                           r.resolve(LanguageDetailWireframe.self)!))
+        }
+
+        SwinjectStoryboard.defaultContainer.registerForStoryboard(CaughtLanguageListViewController.self) {
             r, c in
-            assembler.resolver.resolve(CaughtLanguageListWireframe.self)?.viewController = c
+            let wireframe = assembler.resolver.resolve(CaughtLanguageListWireframe.self)
+
+            // このクロージャがなぜか2回呼ばれるため2回目はキャンセル
+            if wireframe?.viewController === c {
+                return
+            }
+
+            wireframe?.viewController = c
+            c.presenter = wireframe?.presenter
         }
     }
 

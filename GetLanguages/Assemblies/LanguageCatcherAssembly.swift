@@ -10,21 +10,16 @@ import TransitionOperator
 class LanguageCatcherAssembly: AssemblyType {
 
     func assemble(container: Container) {
-        try! container.applyPropertyLoader(loader)
-
         container.register(LanguageCatcherWireframe.self) {
             r in
             return LanguageCatcherWireframe(presenter: r.resolve(LanguageCatcherPresenterType.self)!)
-        }.initCompleted {
-            r, w in
-            w.caughtLanguageListWireframe = r.resolve(CaughtLanguageListWireframe.self)
         }.inObjectScope(.Hierarchy)
 
         container.register(LanguageCatcherPresenterType.self) {
             r in
             return LanguageCatcherPresenter(interactor: r.resolve(LanguageCatcherInteractorType.self)!,
                                             translator: r.resolve(Translator<LanguageType, UnconfirmedLanguageViewModelType>.self)!)
-        }.inObjectScope(.Hierarchy)
+        }
 
         container.register(Translator<LanguageType, UnconfirmedLanguageViewModelType>.self) {
             r in
@@ -56,15 +51,9 @@ class LanguageCatcherAssembly: AssemblyType {
 
         container.register(TransitionOperatorType.self, name: R.segue.languageCatcherViewController.caughtLanguageListSegue.identifier) {
             r in
-            let operations: CompositeTransitionOperator = [
-                    TransitionOperator(LanguageCatcherTransition.caughtLanguageListOperation(TransitionExecutorSegue.self,
-                                                                                             r.resolve(LanguageCatcherWireframe.self)!,
-                                                                                             r.resolve(CaughtLanguageListWireframe.self)!)),
-                    TransitionOperator {
-                        (e: TransitionExecutorSegue, s: UIViewController, d: CaughtLanguageListViewController) in
-                        d.presenter = r.resolve(CaughtLanguageListWireframe.self)!.presenter
-                    }]
-            return operations
+            return TransitionOperator(LanguageCatcherTransition.caughtLanguageListOperation(TransitionExecutorSegue.self,
+                                                                                            r.resolve(LanguageCatcherWireframe.self)!,
+                                                                                            r.resolve(CaughtLanguageListWireframe.self)!))
         }
 
         TransitionExecutorSegue.transitionOperator = TransitionOperator {
@@ -82,8 +71,9 @@ extension SwinjectStoryboard {
     class func setup() {
         defaultContainer.registerForStoryboard(LanguageCatcherViewController.self) {
             r, c in
-            assembler.resolver.resolve(LanguageCatcherWireframe.self)?.viewController = c
-            c.presenter = assembler.resolver.resolve(LanguageCatcherPresenterType.self)
+            let wireframe = assembler.resolver.resolve(LanguageCatcherWireframe.self)
+            wireframe?.viewController = c
+            c.presenter = wireframe?.presenter
             c.maxLanguageNumber = assembler.resolver.property("star_number")!
         }
     }

@@ -4,7 +4,12 @@
 //
 
 import Foundation
+import TransitionOperator
 
 class CaughtLanguageListPresenter: CaughtLanguageListPresenterType {
     var basket: Basket?
+
+    func showDetail(index: Int, send: (AnyObject?) -> ()) {
+        send(TransitionPayload(value: basket?[index]))
+    }
 }

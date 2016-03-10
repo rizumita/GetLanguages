@@ -7,4 +7,5 @@ import Foundation
 
 protocol CaughtLanguageListPresenterType: class {
     var basket: Basket? { get set }
+    func showDetail(index: Int, send: (AnyObject?) -> ())
 }

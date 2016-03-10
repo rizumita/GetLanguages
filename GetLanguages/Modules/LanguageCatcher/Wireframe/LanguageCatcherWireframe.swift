@@ -8,7 +8,6 @@ import UIKit
 class LanguageCatcherWireframe {
     let presenter: LanguageCatcherPresenterType
     var viewController: UIViewController?
-    var caughtLanguageListWireframe: CaughtLanguageListWireframe?
 
     init(presenter: LanguageCatcherPresenterType) {
         self.presenter = presenter

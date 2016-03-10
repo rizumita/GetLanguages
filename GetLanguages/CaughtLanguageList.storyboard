@@ -4,6 +4,22 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5rb-ve-a17">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgA-ea-F2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="fV2-c1-T0T" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yMZ-ez-J81">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BoF-Kd-MX3" kind="relationship" relationship="rootViewController" id="yJH-v9-FPu"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="198" y="671"/>
+        </scene>
         <!--Languages-->
         <scene sceneID="YFN-jF-Ggk">
             <objects>
@@ -14,7 +30,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CaughtLanguageCell" id="50e-NS-vvI">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="50e-NS-vvI" id="Mnw-As-5CC">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -27,10 +43,22 @@
                             <outlet property="delegate" destination="BoF-Kd-MX3" id="tHr-tW-eaN"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="lXo-fe-zjk"/>
+                    <connections>
+                        <segue destination="Fr5-4d-LWp" kind="show" identifier="LanguageDetailSegue" customClass="TransitionExecutorSegue" customModule="TransitionOperator" id="cWL-Zp-wV8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Sz-RI-Dch" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="963" y="671"/>
+        </scene>
+        <!--LanguageDetail-->
+        <scene sceneID="0W6-sn-VeP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LanguageDetail" id="Fr5-4d-LWp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbU-At-YDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497.5" y="671"/>
         </scene>
     </scenes>
 </document>

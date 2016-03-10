@@ -37,6 +37,8 @@
 		6ACE14681C8F963A00DADF3F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F3CAE1C8E4B4200B9BA17 /* RealmSwift.framework */; };
 		6ACE146A1C90D38F00DADF3F /* CaughtLanguageList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACE14691C90D38F00DADF3F /* CaughtLanguageList.storyboard */; };
 		6ACE146C1C90D46700DADF3F /* CaughtLanguageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE146B1C90D46700DADF3F /* CaughtLanguageListViewController.swift */; };
+		6ACE146E1C90FE8C00DADF3F /* LanguageDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACE146D1C90FE8C00DADF3F /* LanguageDetail.storyboard */; };
+		6ACE14701C9105D900DADF3F /* LanguageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE146F1C9105D900DADF3F /* LanguageDetailViewController.swift */; };
 		70E3DFDB1A68E155CB5AC1C1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA38DAC5133A10222B6C1379 /* Pods.framework */; };
 		CB876059D1304DF4A8E77E9F /* LanguageInfoTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876DD891B03CFF57EADEE8 /* LanguageInfoTranslator.swift */; };
 		CB87607064FDD0752554E42A /* LanguageInfoTranslatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876EA1B1A91B8A9064B6B2 /* LanguageInfoTranslatorSpec.swift */; };
@@ -44,13 +46,18 @@
 		CB8760D3AD4D4398D9790BC9 /* LanguageCatcherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876624267F0EE1CD42FBE8 /* LanguageCatcherPresenter.swift */; };
 		CB8760DB0A487F8EA8CC4BB8 /* properties.json in Resources */ = {isa = PBXBuildFile; fileRef = CB8768929774F9EF0086E0C0 /* properties.json */; };
 		CB876102B12F0B8BCAD89B48 /* UnconfirmedLanguageViewModelTranslatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876A7B7922C9B542255BCB /* UnconfirmedLanguageViewModelTranslatorSpec.swift */; };
+		CB876166D935201790E34890 /* LanguageDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876CC13AF6E2C074FB428E /* LanguageDetailPresenter.swift */; };
 		CB8761E51C63FF06C1CBDC39 /* StaticColorMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8761346FDEE041788E4DF6 /* StaticColorMaker.swift */; };
 		CB87624270DEB3218C8796DE /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8765D70EDEEC00234F1D50 /* Assembler.swift */; };
+		CB87626B40380CF4220498BF /* LanguageDetailAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876883F7D2B86E0914FA3B /* LanguageDetailAPIDataManager.swift */; };
 		CB8762D2AEE244F407DD8660 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87638C77D51F35CF39AE12 /* LanguageType.swift */; };
 		CB87633A1DA2B04FD866500D /* TestingTransitionExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87668D73464EE0581118E7 /* TestingTransitionExecutor.swift */; };
 		CB87635424767F9B8A34E9E7 /* LanguageCatcherLocalDataManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876F347C66AF50277C1930 /* LanguageCatcherLocalDataManagerSpec.swift */; };
+		CB87639B4779B8479AF980B9 /* LanguageDetailPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87697CC743F03F9C6BF1B5 /* LanguageDetailPresenterType.swift */; };
 		CB8763A54BE86FDC37DCCF05 /* WikipediaCategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876B15038C561FBDF6111C /* WikipediaCategoryRequest.swift */; };
+		CB8763C9A2D7AEA3C1BFC15A /* LanguageDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8760BDB2A07C431DAAD809 /* LanguageDetailAssembly.swift */; };
 		CB8764055461FEB004EC2F25 /* LanguageCatcherAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876605F8D738DB49BFF555 /* LanguageCatcherAssembly.swift */; };
+		CB87642B6913C325354E805E /* LanguageDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8766ABDED64E3692BFC84F /* LanguageDetailInteractor.swift */; };
 		CB8764521B21DA4F91D7DAF8 /* LanguageCatcherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876E9A9625EF9D4288880E /* LanguageCatcherDataManager.swift */; };
 		CB8764832C45ADEDD9475E4F /* UnconfirmedLanguageViewModelTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876598C5B9CF6D7B2E3BF6 /* UnconfirmedLanguageViewModelTranslator.swift */; };
 		CB876485F97978356A0F43FF /* PositionMakerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8761657A280B37B3142540 /* PositionMakerType.swift */; };
@@ -64,8 +71,10 @@
 		CB8766832111578F122EB7DC /* LanguageCatcherWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876601F7BEFFED3C456AF4 /* LanguageCatcherWireframe.swift */; };
 		CB8766CC92B31D471C0368D6 /* TestingCaughtLanguageListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8768F85C0498A21CCD30E8 /* TestingCaughtLanguageListPresenter.swift */; };
 		CB8766DC9800684E52726E06 /* UnconfirmedLanguageViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87649FB95332C3464B222A /* UnconfirmedLanguageViewModelSpec.swift */; };
+		CB8766E430A3C5159B4C8E1D /* LanguageDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876ED50CCB6C8BADC12D09 /* LanguageDetailWireframe.swift */; };
 		CB8766E543C0C0BC032D9FC5 /* UnconfirmedLanguageViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876F6D50C9B69D7E570A53 /* UnconfirmedLanguageViewModelType.swift */; };
 		CB876709D89606E64DF349FC /* LanguageCatcherTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876642AF5ACA39334E8817 /* LanguageCatcherTransition.swift */; };
+		CB87677EB65D6C4168ABC497 /* CaughtLanguageListTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876DACE0FAC5511F02DAA7 /* CaughtLanguageListTransition.swift */; };
 		CB8767857995C217078C65BA /* UnconfirmedLanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876FA6A25ABCC8B7031979 /* UnconfirmedLanguageViewModel.swift */; };
 		CB876819C0BC3F4E0F4A823E /* category_failed.json in Resources */ = {isa = PBXBuildFile; fileRef = CB87637EBD1D278B783C7E10 /* category_failed.json */; };
 		CB8768290AE1C27614A9815F /* UnconfirmedLanguageViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87646280F1D53BAC01D3FD /* UnconfirmedLanguageViewSpec.swift */; };
@@ -83,10 +92,12 @@
 		CB876A991F05BB007B5F2B77 /* CaughtLanguageListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87679DC4C5B15410993D34 /* CaughtLanguageListWireframe.swift */; };
 		CB876B0289AF03EE2038881B /* LanguageCatcherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8762066CCECCD64B2D5DDC /* LanguageCatcherInteractor.swift */; };
 		CB876B30160AF2CC5BFAFAB0 /* LanguageCatcherInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876ACFA2CAC4CC48B0F65F /* LanguageCatcherInteractorType.swift */; };
+		CB876C0897FB61D4893F5033 /* WikipediaLanguageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8761D5527FDBC206B60C06 /* WikipediaLanguageRequest.swift */; };
 		CB876CC4EB09BF99687C01C1 /* CaughtLanguageListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8769229FF4D053E45F1A33 /* CaughtLanguageListAssembly.swift */; };
 		CB876CEAB1B9E16FDDBF5FC7 /* LanguageCatcherViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87694695CD64DD88D52B0C /* LanguageCatcherViewControllerSpec.swift */; };
 		CB876D0926013C22191B73EF /* LanguageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8761956AC6BA86047BE1C8 /* LanguageInfo.swift */; };
 		CB876D27C9651ECBE0BF50B2 /* TestingLanguageCatcherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876878F38D46C508908C6D /* TestingLanguageCatcherInteractor.swift */; };
+		CB876D3D6DEE76A547C10BBE /* LanguageDetailInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876908DBFDC30118AFE14A /* LanguageDetailInteractorType.swift */; };
 		CB876D51F7E7A9054D29ABD9 /* RandomColorMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8761C66B10CC08F13FDF3C /* RandomColorMaker.swift */; };
 		CB876EF93284C27CDDBE2444 /* TestingLanguageCatcherAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876E46A27ED877CCB976EC /* TestingLanguageCatcherAPIDataManager.swift */; };
 		CB876F0E3027781AB4201C66 /* ReactiveCocoa+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB876509285922EC1AC2B342 /* ReactiveCocoa+Extensions.swift */; };
@@ -168,17 +179,21 @@
 		6AC48AE81C8CE68C002E2890 /* GetLanguages.pcvd */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = GetLanguages.pcvd; path = GetLanguages/GetLanguages.pcvd; sourceTree = "<group>"; };
 		6ACE14691C90D38F00DADF3F /* CaughtLanguageList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaughtLanguageList.storyboard; sourceTree = "<group>"; };
 		6ACE146B1C90D46700DADF3F /* CaughtLanguageListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaughtLanguageListViewController.swift; sourceTree = "<group>"; };
+		6ACE146D1C90FE8C00DADF3F /* LanguageDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LanguageDetail.storyboard; sourceTree = "<group>"; };
+		6ACE146F1C9105D900DADF3F /* LanguageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageDetailViewController.swift; sourceTree = "<group>"; };
 		6E90752372D30A86EC3A8FC7 /* Pods_GetLanguagesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetLanguagesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD708EBACC7FBE44D48B67F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		88D91ACE3700DB9B499F6161 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C47D026B2A21C5562E30C051 /* Pods-GetLanguagesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetLanguagesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetLanguagesUITests/Pods-GetLanguagesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB876076EB99CD2A628D3963 /* LanguageCatcherAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherAPIDataManager.swift; sourceTree = "<group>"; };
 		CB8760A0CC6A699DC8C0A577 /* LanguageCatcherPresenterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherPresenterType.swift; sourceTree = "<group>"; };
+		CB8760BDB2A07C431DAAD809 /* LanguageDetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageDetailAssembly.swift; sourceTree = "<group>"; };
 		CB8760EBF62CF38980D1602E /* UnconfirmedLanguageSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageSpec.swift; sourceTree = "<group>"; };
 		CB8761346FDEE041788E4DF6 /* StaticColorMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticColorMaker.swift; sourceTree = "<group>"; };
 		CB8761657A280B37B3142540 /* PositionMakerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionMakerType.swift; sourceTree = "<group>"; };
 		CB8761956AC6BA86047BE1C8 /* LanguageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageInfo.swift; sourceTree = "<group>"; };
 		CB8761C66B10CC08F13FDF3C /* RandomColorMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorMaker.swift; sourceTree = "<group>"; };
+		CB8761D5527FDBC206B60C06 /* WikipediaLanguageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikipediaLanguageRequest.swift; sourceTree = "<group>"; };
 		CB8762066CCECCD64B2D5DDC /* LanguageCatcherInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherInteractor.swift; sourceTree = "<group>"; };
 		CB876211694A08CD77FDB3D3 /* CaughtLanguageListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaughtLanguageListPresenter.swift; sourceTree = "<group>"; };
 		CB8762B8410C3BD56E148B62 /* LanguageCatcherAPIDataManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherAPIDataManagerSpec.swift; sourceTree = "<group>"; };
@@ -200,6 +215,7 @@
 		CB876624267F0EE1CD42FBE8 /* LanguageCatcherPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherPresenter.swift; sourceTree = "<group>"; };
 		CB876642AF5ACA39334E8817 /* LanguageCatcherTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherTransition.swift; sourceTree = "<group>"; };
 		CB87668D73464EE0581118E7 /* TestingTransitionExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingTransitionExecutor.swift; sourceTree = "<group>"; };
+		CB8766ABDED64E3692BFC84F /* LanguageDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageDetailInteractor.swift; sourceTree = "<group>"; };
 		CB8766C79A38ACBC67139D0C /* RandomColorMakerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorMakerSpec.swift; sourceTree = "<group>"; };
 		CB8766D2DDE5622D8ED70003 /* LanguageCatcherAPIDataManagerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherAPIDataManagerType.swift; sourceTree = "<group>"; };
 		CB8767667ADB68D0D3498ABA /* LanguageCatcherTransitionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherTransitionSpec.swift; sourceTree = "<group>"; };
@@ -208,11 +224,14 @@
 		CB8767B9EFE47F89F040AFD5 /* LanguageCatcherInteractorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherInteractorSpec.swift; sourceTree = "<group>"; };
 		CB8767DA094AF7C837A91398 /* RandomPositionMakerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomPositionMakerSpec.swift; sourceTree = "<group>"; };
 		CB876878F38D46C508908C6D /* TestingLanguageCatcherInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingLanguageCatcherInteractor.swift; sourceTree = "<group>"; };
+		CB876883F7D2B86E0914FA3B /* LanguageDetailAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageDetailAPIDataManager.swift; sourceTree = "<group>"; };
 		CB8768929774F9EF0086E0C0 /* properties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = properties.json; sourceTree = "<group>"; };
 		CB8768F85C0498A21CCD30E8 /* TestingCaughtLanguageListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingCaughtLanguageListPresenter.swift; sourceTree = "<group>"; };
+		CB876908DBFDC30118AFE14A /* LanguageDetailInteractorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageDetailInteractorType.swift; sourceTree = "<group>"; };
 		CB8769229FF4D053E45F1A33 /* CaughtLanguageListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaughtLanguageListAssembly.swift; sourceTree = "<group>"; };
 		CB87694695CD64DD88D52B0C /* LanguageCatcherViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherViewControllerSpec.swift; sourceTree = "<group>"; };
 		CB876971D2E32F4F9052AD92 /* Basket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
+		CB87697CC743F03F9C6BF1B5 /* LanguageDetailPresenterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageDetailPresenterType.swift; sourceTree = "<group>"; };
 		CB8769A656C96B8E42D4AA91 /* UnconfirmedLanguageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageView.swift; sourceTree = "<group>"; };
 		CB876A7B7922C9B542255BCB /* UnconfirmedLanguageViewModelTranslatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageViewModelTranslatorSpec.swift; sourceTree = "<group>"; };
 		CB876AB15408581659E7188A /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
@@ -222,13 +241,16 @@
 		CB876BB545493AF489D1E126 /* StaticPositionMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticPositionMaker.swift; sourceTree = "<group>"; };
 		CB876C15D5AC33AD5B31FA02 /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		CB876C986C936977D37B8AF0 /* BasketSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketSpec.swift; sourceTree = "<group>"; };
+		CB876CC13AF6E2C074FB428E /* LanguageDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageDetailPresenter.swift; sourceTree = "<group>"; };
 		CB876D3CEABF3824DC099DF1 /* CaughtLanguageListPresenterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaughtLanguageListPresenterType.swift; sourceTree = "<group>"; };
+		CB876DACE0FAC5511F02DAA7 /* CaughtLanguageListTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaughtLanguageListTransition.swift; sourceTree = "<group>"; };
 		CB876DD891B03CFF57EADEE8 /* LanguageInfoTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageInfoTranslator.swift; sourceTree = "<group>"; };
 		CB876DFBC34DA8F31EB9D16C /* TestingLanguageCatcherLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingLanguageCatcherLocalDataManager.swift; sourceTree = "<group>"; };
 		CB876E46A27ED877CCB976EC /* TestingLanguageCatcherAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingLanguageCatcherAPIDataManager.swift; sourceTree = "<group>"; };
 		CB876E960D62167209BD76AE /* FieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
 		CB876E9A9625EF9D4288880E /* LanguageCatcherDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherDataManager.swift; sourceTree = "<group>"; };
 		CB876EA1B1A91B8A9064B6B2 /* LanguageInfoTranslatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageInfoTranslatorSpec.swift; sourceTree = "<group>"; };
+		CB876ED50CCB6C8BADC12D09 /* LanguageDetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageDetailWireframe.swift; sourceTree = "<group>"; };
 		CB876F347C66AF50277C1930 /* LanguageCatcherLocalDataManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCatcherLocalDataManagerSpec.swift; sourceTree = "<group>"; };
 		CB876F6D50C9B69D7E570A53 /* UnconfirmedLanguageViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageViewModelType.swift; sourceTree = "<group>"; };
 		CB876FA6A25ABCC8B7031979 /* UnconfirmedLanguageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnconfirmedLanguageViewModel.swift; sourceTree = "<group>"; };
@@ -337,6 +359,7 @@
 				6AC48A9D1C8B9419002E2890 /* AppDelegate.swift */,
 				6AC48AA11C8B9419002E2890 /* Main.storyboard */,
 				6ACE14691C90D38F00DADF3F /* CaughtLanguageList.storyboard */,
+				6ACE146D1C90FE8C00DADF3F /* LanguageDetail.storyboard */,
 				6AC48AA41C8B9419002E2890 /* Assets.xcassets */,
 				6AC48AA61C8B9419002E2890 /* LaunchScreen.storyboard */,
 				6AC48AA91C8B9419002E2890 /* Info.plist */,
@@ -403,6 +426,7 @@
 				CB876F131C38D21AFDC21699 /* LanguageCatcher */,
 				CB876AA8B24AE24D51DA3BF2 /* Commons */,
 				CB8766B6E1C24EED5992BC43 /* CaughtLanguageList */,
+				CB876B2BEF5AC83AE62A0FAE /* LanguageDetail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -441,6 +465,7 @@
 				CB876605F8D738DB49BFF555 /* LanguageCatcherAssembly.swift */,
 				CB8765D70EDEEC00234F1D50 /* Assembler.swift */,
 				CB8769229FF4D053E45F1A33 /* CaughtLanguageListAssembly.swift */,
+				CB8760BDB2A07C431DAAD809 /* LanguageDetailAssembly.swift */,
 			);
 			path = Assemblies;
 			sourceTree = "<group>";
@@ -449,6 +474,7 @@
 			isa = PBXGroup;
 			children = (
 				CB87679DC4C5B15410993D34 /* CaughtLanguageListWireframe.swift */,
+				CB876DACE0FAC5511F02DAA7 /* CaughtLanguageListTransition.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -468,6 +494,7 @@
 				CB876FB05C8188F238E2E434 /* WikipediaRequestType.swift */,
 				CB876B15038C561FBDF6111C /* WikipediaCategoryRequest.swift */,
 				CB87638C77D51F35CF39AE12 /* LanguageType.swift */,
+				CB8761D5527FDBC206B60C06 /* WikipediaLanguageRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -512,6 +539,14 @@
 			path = Wireframe;
 			sourceTree = "<group>";
 		};
+		CB87686F6EA92756004C5474 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				CB876883F7D2B86E0914FA3B /* LanguageDetailAPIDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		CB8768780932613C1F15EE43 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,8 +588,21 @@
 				CB8767B81FF2D57EA017DE7E /* TranslatorType.swift */,
 				CB876C15D5AC33AD5B31FA02 /* Translator.swift */,
 				CB8766C8C68D8DA5F397CF62 /* Presenter */,
+				CB876DEBB7EA180E60BE1664 /* View */,
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		CB876B2BEF5AC83AE62A0FAE /* LanguageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CB876BDB83F609F8FAB24684 /* Wireframe */,
+				CB876ECC7A3064DD075BCADC /* Presenter */,
+				CB876ED651E3423A00A54440 /* View */,
+				CB876BE8E6C80CC2BC6B94DB /* Interactor */,
+				CB87686F6EA92756004C5474 /* DataManager */,
+			);
+			path = LanguageDetail;
 			sourceTree = "<group>";
 		};
 		CB876B5D3476A835FF87FADB /* Presenter */ = {
@@ -595,10 +643,51 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
+		CB876BDB83F609F8FAB24684 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				CB876ED50CCB6C8BADC12D09 /* LanguageDetailWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		CB876BE8E6C80CC2BC6B94DB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CB876908DBFDC30118AFE14A /* LanguageDetailInteractorType.swift */,
+				CB8766ABDED64E3692BFC84F /* LanguageDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CB876DEBB7EA180E60BE1664 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CB876E99E7EB28FE3F35A458 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				6ACE146B1C90D46700DADF3F /* CaughtLanguageListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB876ECC7A3064DD075BCADC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CB87697CC743F03F9C6BF1B5 /* LanguageDetailPresenterType.swift */,
+				CB876CC13AF6E2C074FB428E /* LanguageDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CB876ED651E3423A00A54440 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6ACE146F1C9105D900DADF3F /* LanguageDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -773,6 +862,7 @@
 				6AC48AA51C8B9419002E2890 /* Assets.xcassets in Resources */,
 				6AC48AA31C8B9419002E2890 /* Main.storyboard in Resources */,
 				CB8760DB0A487F8EA8CC4BB8 /* properties.json in Resources */,
+				6ACE146E1C90FE8C00DADF3F /* LanguageDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1000,6 +1090,16 @@
 				CB876A4EFD58F12E8D0C8651 /* CaughtLanguageListPresenter.swift in Sources */,
 				CB876FA57E3F593C6FEEF6F8 /* Basket.swift in Sources */,
 				CB876A17E9C692BE5B7AF544 /* SourceType.swift in Sources */,
+				CB87677EB65D6C4168ABC497 /* CaughtLanguageListTransition.swift in Sources */,
+				CB8766E430A3C5159B4C8E1D /* LanguageDetailWireframe.swift in Sources */,
+				CB87639B4779B8479AF980B9 /* LanguageDetailPresenterType.swift in Sources */,
+				CB876166D935201790E34890 /* LanguageDetailPresenter.swift in Sources */,
+				CB8763C9A2D7AEA3C1BFC15A /* LanguageDetailAssembly.swift in Sources */,
+				6ACE14701C9105D900DADF3F /* LanguageDetailViewController.swift in Sources */,
+				CB876D3D6DEE76A547C10BBE /* LanguageDetailInteractorType.swift in Sources */,
+				CB87642B6913C325354E805E /* LanguageDetailInteractor.swift in Sources */,
+				CB87626B40380CF4220498BF /* LanguageDetailAPIDataManager.swift in Sources */,
+				CB876C0897FB61D4893F5033 /* WikipediaLanguageRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
