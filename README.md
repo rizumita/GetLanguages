@@ -3,6 +3,6 @@
 ## 実行方法
 
 1. carthage bootstrap --platform ios --no-use-binaries
-2. pod insall
+2. pod install
 3. open GetLanguages.xcworkspace
-3. run
+4. run
