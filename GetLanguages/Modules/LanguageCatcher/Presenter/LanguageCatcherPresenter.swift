@@ -24,11 +24,11 @@ struct LanguageCatcherPresenter: LanguageCatcherPresenterType {
 
         preparedProperty = AnyProperty(initialValue: false, producer: interactor.preparedProperty.producer)
 
-        let addObserver = basket.addObserver
+        let b = basket
         languageViewModelSignal = self.interactor.fetchedLanguageSignal.map(translator.translate).on {
             (viewModel: UnconfirmedLanguageViewModelType) in
             viewModel.caughtLanguageSignal.observeNext {
-                addObserver.sendNext($0)
+                b.addItem($0)
             }
         }
     }

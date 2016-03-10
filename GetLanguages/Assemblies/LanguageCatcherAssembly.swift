@@ -24,7 +24,7 @@ class LanguageCatcherAssembly: AssemblyType {
             r in
             return LanguageCatcherPresenter(interactor: r.resolve(LanguageCatcherInteractorType.self)!,
                                             translator: r.resolve(Translator<LanguageType, UnconfirmedLanguageViewModelType>.self)!)
-        }
+        }.inObjectScope(.Hierarchy)
 
         container.register(Translator<LanguageType, UnconfirmedLanguageViewModelType>.self) {
             r in
@@ -56,7 +56,15 @@ class LanguageCatcherAssembly: AssemblyType {
 
         container.register(TransitionOperatorType.self, name: R.segue.languageCatcherViewController.caughtLanguageListSegue.identifier) {
             r in
-            return TransitionOperator(LanguageCatcherTransition.caughtLanguageListOperation(TransitionExecutorSegue.self, r.resolve(LanguageCatcherWireframe.self)!, r.resolve(CaughtLanguageListWireframe.self)!))
+            let operations: CompositeTransitionOperator = [
+                    TransitionOperator(LanguageCatcherTransition.caughtLanguageListOperation(TransitionExecutorSegue.self,
+                                                                                             r.resolve(LanguageCatcherWireframe.self)!,
+                                                                                             r.resolve(CaughtLanguageListWireframe.self)!)),
+                    TransitionOperator {
+                        (e: TransitionExecutorSegue, s: UIViewController, d: CaughtLanguageListViewController) in
+                        d.presenter = r.resolve(CaughtLanguageListWireframe.self)!.presenter
+                    }]
+            return operations
         }
 
         TransitionExecutorSegue.transitionOperator = TransitionOperator {

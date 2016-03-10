@@ -44,14 +44,14 @@ struct R: Rswift.Validatable {
   }
   
   struct reuseIdentifier {
-    
+    static let caughtLanguageCell: ReuseIdentifier<UITableViewCell> = ReuseIdentifier(identifier: "CaughtLanguageCell")
   }
   
   struct segue {
     struct languageCatcherViewController {
-      static let caughtLanguageListSegue: StoryboardSegueIdentifier<TransitionExecutorSegue, LanguageCatcherViewController, UITableViewController> = StoryboardSegueIdentifier(identifier: "CaughtLanguageListSegue")
+      static let caughtLanguageListSegue: StoryboardSegueIdentifier<TransitionExecutorSegue, LanguageCatcherViewController, CaughtLanguageListViewController> = StoryboardSegueIdentifier(identifier: "CaughtLanguageListSegue")
       
-      static func caughtLanguageListSegue(segue segue: UIStoryboardSegue) -> TypedStoryboardSegueInfo<TransitionExecutorSegue, LanguageCatcherViewController, UITableViewController>? {
+      static func caughtLanguageListSegue(segue segue: UIStoryboardSegue) -> TypedStoryboardSegueInfo<TransitionExecutorSegue, LanguageCatcherViewController, CaughtLanguageListViewController>? {
         return TypedStoryboardSegueInfo(segueIdentifier: R.segue.languageCatcherViewController.caughtLanguageListSegue, segue: segue)
       }
     }
@@ -93,7 +93,7 @@ struct _R: Rswift.Validatable {
     }
     
     struct caughtLanguageList: StoryboardResourceWithInitialControllerType {
-      typealias InitialController = UITableViewController
+      typealias InitialController = CaughtLanguageListViewController
       
       let bundle = _R.hostingBundle
       let name = "CaughtLanguageList"

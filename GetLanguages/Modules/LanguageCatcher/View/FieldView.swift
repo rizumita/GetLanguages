@@ -7,6 +7,10 @@ import UIKit
 
 class FieldView: UIView {
 
+    var languageViews: [UnconfirmedLanguageView] {
+        return subviews.filter { $0 is UnconfirmedLanguageView } as! [UnconfirmedLanguageView]
+    }
+
     override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
         let hitted = subviews.flatMap {
             (view: UIView) -> UnconfirmedLanguageView? in

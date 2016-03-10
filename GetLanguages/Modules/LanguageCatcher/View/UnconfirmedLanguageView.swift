@@ -67,18 +67,30 @@ class UnconfirmedLanguageView: UIView {
         self.fieldView = fieldView
         fieldView.addSubview(self)
 
+    }
+
+    func move() {
+        guard let fieldView = fieldView else {
+            return
+        }
+
         layer.position = viewModel.positionOnArea(fieldView.frame.size)
         nextAction = runActionInArea()
         nextRotationX = rotationActionWithKeyPath("transform.rotation.x", key: .RotationX, baseDegree: 180.0)
         nextRotationY = rotationActionWithKeyPath("transform.rotation.y", key: .RotationY, baseDegree: 180.0)
         nextRotationZ = rotationActionWithKeyPath("transform.rotation.z", key: .RotationZ, baseDegree: 360.0)
-    }
 
-    func move() {
         nextAction?()
         nextRotationX?()
         nextRotationY?()
         nextRotationZ?()
+    }
+
+    func stop() {
+        nextAction = nil
+        nextRotationX = nil
+        nextRotationY = nil
+        nextRotationZ = nil
     }
 
     enum AnimationKey: String {

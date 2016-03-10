@@ -10,11 +10,11 @@ struct LanguageCatcherTransition {
 
     static func caughtLanguageListOperation<T: TransitionExecutorType>(executorType: T.Type, _ sourceWireframe: LanguageCatcherWireframe,
                                             _ destinationWireframe: CaughtLanguageListWireframe)
-                    -> (T, UIViewController, UIViewController) throws -> () {
+                    -> (T, UIViewController, UIViewController) -> () {
         return {
-            _, _, _ in
+            _, _, d in
             destinationWireframe.showWithBasket(sourceWireframe.presenter.basket)
         }
     }
-
+    
 }

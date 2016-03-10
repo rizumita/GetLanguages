@@ -19,11 +19,11 @@ class CaughtLanguageListAssembly: AssemblyType {
         container.register(CaughtLanguageListPresenterType.self) {
             r in
             return CaughtLanguageListPresenter()
-        }
+        }.inObjectScope(.Hierarchy)
 
         container.registerForStoryboard(CaughtLanguageListViewController.self) {
             r, c in
-            r.resolve(CaughtLanguageListWireframe.self)?.viewController = c
+            assembler.resolver.resolve(CaughtLanguageListWireframe.self)?.viewController = c
         }
     }
 
