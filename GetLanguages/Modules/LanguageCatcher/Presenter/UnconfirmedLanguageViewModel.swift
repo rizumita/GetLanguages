@@ -54,6 +54,7 @@ class UnconfirmedLanguageViewModel: UnconfirmedLanguageViewModelType {
     }
 
     private let disposable = CompositeDisposable()
+    private let scopedDisposable: ScopedDisposable
 
     init(language: LanguageType, positionMaker: PositionMakerType, colorMaker: ColorMakerType, size: CGFloat = 30.0, actionDuration: NSTimeInterval = 4.0) {
         self.positionMaker = positionMaker
@@ -67,6 +68,8 @@ class UnconfirmedLanguageViewModel: UnconfirmedLanguageViewModelType {
         disposable += caughtSignal.map {
             language
         }.observe(caughtLanguageObsevrer)
+
+        scopedDisposable = ScopedDisposable(disposable)
     }
 
 }

@@ -13,11 +13,10 @@ struct LanguageCatcherPresenter: LanguageCatcherPresenterType {
 
     let languageViewModelSignal: Signal<UnconfirmedLanguageViewModelType, NoError>
     let preparedProperty:        AnyProperty<Bool>
+    let basket = Basket()
 
     private let interactor: LanguageCatcherInteractorType
     private let translator: Translator<LanguageType, UnconfirmedLanguageViewModelType>
-
-    private let basket = Basket()
 
     init(interactor: LanguageCatcherInteractorType, translator: Translator<LanguageType, UnconfirmedLanguageViewModelType>) {
         self.interactor = interactor
@@ -25,16 +24,16 @@ struct LanguageCatcherPresenter: LanguageCatcherPresenterType {
 
         preparedProperty = AnyProperty(initialValue: false, producer: interactor.preparedProperty.producer)
 
-        let addObserver = basket.addObserver
+        let b = basket
         languageViewModelSignal = self.interactor.fetchedLanguageSignal.map(translator.translate).on {
             (viewModel: UnconfirmedLanguageViewModelType) in
             viewModel.caughtLanguageSignal.observeNext {
-                addObserver.sendNext($0)
+                b.addItem($0)
             }
         }
     }
 
-    func bringLanguages() {
+    func bringLanguage() {
         interactor.fetchLanguage()
     }
 

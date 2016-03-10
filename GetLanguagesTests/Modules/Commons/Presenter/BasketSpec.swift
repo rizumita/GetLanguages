@@ -9,7 +9,7 @@ class BasketSpec: QuickSpec {
                 let basket = Basket()
 
                 for index in 0...100 {
-                    basket.addObserver.sendNext(LanguageInfo(id: index, name: "name_\(index)", content: "content_\(index)"))
+                    basket.addItem(LanguageInfo(id: index, name: "name_\(index)", content: "content_\(index)"))
                     expect(basket[index]!.id) == index
                     expect(basket[index]!.name) == "name_\(index)"
                     expect(basket[index]!.content) == "content_\(index)"

@@ -13,14 +13,14 @@ class ProgrammingLanguage: Object, Decodable, LanguageType {
 
     dynamic private(set) var name: String = ""
 
-    dynamic private(set) var content: String = ""
+    dynamic var content: String = ""
 
     override class func primaryKey() -> String? {
         return "id"
     }
 
     class func decode(e: Extractor) throws -> ProgrammingLanguage {
-        let realm = try Realm()
+        let realm   = try Realm()
         let id: Int = try e <| "pageid"
         if let item = realm.objectForPrimaryKey(ProgrammingLanguage.self, key: id) {
             return item

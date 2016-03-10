@@ -25,9 +25,8 @@ class UnconfirmedLanguageViewSpec: QuickSpec {
 
             it("emerge on static position") {
                 view.emergeOnField(fieldView)
-                expect(view.currentRect.contains(CGPoint(x: 100.0, y: 100.0))) == true
                 view.move()
-                expect(view.currentRect.contains(CGPoint(x: 110.0, y: 110.0))) == true
+                expect(view.currentRect.contains(CGPoint(x: 100.0, y: 100.0))) == true
             }
         }
     }

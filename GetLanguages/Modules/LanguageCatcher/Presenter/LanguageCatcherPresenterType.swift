@@ -10,6 +10,7 @@ import Result
 protocol LanguageCatcherPresenterType {
     var languageViewModelSignal: Signal<UnconfirmedLanguageViewModelType, NoError> { get }
     var preparedProperty: AnyProperty<Bool> { get }
+    var basket: Basket { get }
 
-    func bringLanguages()
+    func bringLanguage()
 }

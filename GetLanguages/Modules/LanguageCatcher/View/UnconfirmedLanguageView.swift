@@ -24,8 +24,10 @@ class UnconfirmedLanguageView: UIView {
     private let tapGestureRecognizer = UITapGestureRecognizer()
 
     private let disposable = CompositeDisposable()
+    private let scopedDisposable: ScopedDisposable
 
     init(viewModel: UnconfirmedLanguageViewModelType) {
+        scopedDisposable = ScopedDisposable(disposable)
         self.viewModel = viewModel
         let rect = CGRect(x: 0.0, y: 0.0, width: viewModel.size, height: viewModel.size)
 
@@ -67,18 +69,30 @@ class UnconfirmedLanguageView: UIView {
         self.fieldView = fieldView
         fieldView.addSubview(self)
 
+    }
+
+    func move() {
+        guard let fieldView = fieldView else {
+            return
+        }
+
         layer.position = viewModel.positionOnArea(fieldView.frame.size)
         nextAction = runActionInArea()
         nextRotationX = rotationActionWithKeyPath("transform.rotation.x", key: .RotationX, baseDegree: 180.0)
         nextRotationY = rotationActionWithKeyPath("transform.rotation.y", key: .RotationY, baseDegree: 180.0)
         nextRotationZ = rotationActionWithKeyPath("transform.rotation.z", key: .RotationZ, baseDegree: 360.0)
-    }
 
-    func move() {
         nextAction?()
         nextRotationX?()
         nextRotationY?()
         nextRotationZ?()
+    }
+
+    func stop() {
+        nextAction = nil
+        nextRotationX = nil
+        nextRotationY = nil
+        nextRotationZ = nil
     }
 
     enum AnimationKey: String {

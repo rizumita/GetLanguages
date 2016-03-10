@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qkx-Jx-yob">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Language Detail View Controller-->
+        <scene sceneID="QCc-EB-uRl">
+            <objects>
+                <viewController id="qkx-Jx-yob" customClass="LanguageDetailViewController" customModule="GetLanguages" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5m7-lk-pf8"/>
+                        <viewControllerLayoutGuide type="bottom" id="aj7-TG-VTS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Q4-4a-26K">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFK-Iz-BqQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eFK-Iz-BqQ" secondAttribute="trailing" id="9aQ-cE-oE5"/>
+                            <constraint firstItem="eFK-Iz-BqQ" firstAttribute="top" secondItem="8Q4-4a-26K" secondAttribute="top" id="EMv-aa-bKN"/>
+                            <constraint firstItem="aj7-TG-VTS" firstAttribute="top" secondItem="eFK-Iz-BqQ" secondAttribute="bottom" id="M1S-hj-B3p"/>
+                            <constraint firstItem="eFK-Iz-BqQ" firstAttribute="leading" secondItem="8Q4-4a-26K" secondAttribute="leading" id="Qgu-h8-bKe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mpC-f1-rLy"/>
+                    <connections>
+                        <outlet property="webView" destination="eFK-Iz-BqQ" id="IkU-by-6Cc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNo-h7-e6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="810"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Od3-2P-rym">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oc0-Mf-gHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="p84-tL-8U7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DsU-Tr-NA0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qkx-Jx-yob" kind="relationship" relationship="rootViewController" id="uZ4-k7-nkM"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="323" y="810"/>
+        </scene>
+    </scenes>
+</document>
