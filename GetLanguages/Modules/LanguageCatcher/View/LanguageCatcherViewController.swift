@@ -23,6 +23,8 @@ class LanguageCatcherViewController: UIViewController {
     private let disposable                                                                   = CompositeDisposable()
     private var scopedDisposable:               ScopedDisposable?
 
+    var isPresenting = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,7 +39,7 @@ class LanguageCatcherViewController: UIViewController {
         }
         disposable += QueueScheduler().scheduleAfter(NSDate(), repeatingEvery: 3.0) {
             [unowned self] in
-            if self.fieldView.subviews.count < self.maxLanguageNumber {
+            if self.isPresenting == true && self.fieldView.subviews.count < self.maxLanguageNumber {
                 self.needsLanguageSignalAndObserver.1.sendNext()
             }
         }
@@ -50,10 +52,14 @@ class LanguageCatcherViewController: UIViewController {
         fieldView.languageViews.forEach {
             $0.move()
         }
+
+        isPresenting = true
     }
 
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
+
+        isPresenting = false
 
         fieldView.languageViews.forEach {
             $0.stop()
